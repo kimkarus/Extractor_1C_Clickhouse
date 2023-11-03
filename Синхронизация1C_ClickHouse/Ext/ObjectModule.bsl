@@ -1,5 +1,4 @@
-﻿
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start
+﻿//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start
 Функция СведенияОВнешнейОбработке() Экспорт 
 	
 	ИмяОтчета = ЭтотОбъект.Метаданные().Имя; 
