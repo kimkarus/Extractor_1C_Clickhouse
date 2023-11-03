@@ -312,7 +312,8 @@
 	
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
-																				  			//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start			
+
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start			
 Процедура ВыгрузитьДанныеClickHouse_Запрос_НаСервере(Запрос, Параметры, ПараметрыЗапроса)
 	
 	ПараметрыМакета = ПараметрыЗапроса.ПараметрыМакета;
@@ -444,7 +445,7 @@
 КонецПроцедуры
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end																				  
 
-																							//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start			   
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start			   
 Функция ПолучитьВремяUTC(ПараметрДата) 
 	ПериодДень = День(ПараметрДата);
 	ПериодМесяц = Месяц(ПараметрДата);
@@ -644,7 +645,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end																				  
 
-																							//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start				
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start				
 Функция ВыполнитьЗапросPOST_ClickHouse(ТекстЗапроса, Параметры)
 	Запрос = ТекстЗапроса;
 	//
