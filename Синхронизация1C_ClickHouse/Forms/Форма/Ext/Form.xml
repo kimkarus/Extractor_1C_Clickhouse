@@ -15,26 +15,81 @@
 			<ContextMenu name="ПериодКонтекстноеМеню" id="16"/>
 			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="17"/>
 		</InputField>
-		<Button name="ВыгрузитьДанныеПростоиПоТипам" id="18">
-			<Type>UsualButton</Type>
-			<CommandName>Form.Command.ВыгрузитьДанныеПростоиПоТипам</CommandName>
-			<ExtendedTooltip name="ВыгрузитьДанныеПростоиПоТипамРасширеннаяПодсказка" id="19"/>
-		</Button>
-		<Button name="ЗапросОперативныйОтчетЛогисты" id="23">
-			<Type>UsualButton</Type>
-			<CommandName>Form.Command.ЗапросОперативныйОтчетЛогисты</CommandName>
-			<ExtendedTooltip name="ЗапросОперативныйОтчетЛогистыРасширеннаяПодсказка" id="24"/>
-		</Button>
-		<Button name="ЗапросОперативныйОтчетКоммерсанты" id="25">
-			<Type>UsualButton</Type>
-			<CommandName>Form.Command.ЗапросОперативныйОтчетКоммерсанты</CommandName>
-			<ExtendedTooltip name="ЗапросОперативныйОтчетКоммерсантыРасширеннаяПодсказка" id="26"/>
-		</Button>
-		<Button name="ОтчетСтранныеДвижения" id="27">
-			<Type>UsualButton</Type>
-			<CommandName>Form.Command.ОтчетСтранныеДвижения</CommandName>
-			<ExtendedTooltip name="ОтчетСтранныеДвиженияРасширеннаяПодсказка" id="28"/>
-		</Button>
+		<Pages name="Группа1" id="33">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<Page name="Группа2" id="35">
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<Button name="ВыгрузитьДанныеПростоиПоТипам" id="18">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ВыгрузитьДанныеПростоиПоТипам</CommandName>
+							<ExtendedTooltip name="ВыгрузитьДанныеПростоиПоТипамРасширеннаяПодсказка" id="19"/>
+						</Button>
+						<Button name="ЗапросОперативныйОтчетЛогисты" id="23">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросОперативныйОтчетЛогисты</CommandName>
+							<ExtendedTooltip name="ЗапросОперативныйОтчетЛогистыРасширеннаяПодсказка" id="24"/>
+						</Button>
+						<Button name="ЗапросОперативныйОтчетКоммерсанты" id="25">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросОперативныйОтчетКоммерсанты</CommandName>
+							<ExtendedTooltip name="ЗапросОперативныйОтчетКоммерсантыРасширеннаяПодсказка" id="26"/>
+						</Button>
+						<Button name="ОтчетСтранныеДвижения" id="27">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОтчетСтранныеДвижения</CommandName>
+							<ExtendedTooltip name="ОтчетСтранныеДвиженияРасширеннаяПодсказка" id="28"/>
+						</Button>
+						<Button name="ОтчетПоЭкономикеИСтатистикеРейсов" id="29">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОтчетПоЭкономикеИСтатистикеРейсов</CommandName>
+							<ExtendedTooltip name="ОтчетПоЭкономикеИСтатистикеРейсовРасширеннаяПодсказка" id="30"/>
+						</Button>
+						<Button name="ЗапросОперативныйОтчетКлиентаВагоныАсбест" id="31">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросОперативныйОтчетКлиентаВагоныАсбест</CommandName>
+							<ExtendedTooltip name="ЗапросОперативныйОтчетКлиентаВагоныАсбестРасширеннаяПодсказка" id="32"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Группа3" id="37">
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<Button name="ЗапросПростоиИБросаниеНеНаСтанцииДиспетчерKPI" id="39">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросПростоиИБросаниеНеНаСтанцииДиспетчерKPI</CommandName>
+							<ExtendedTooltip name="ЗапросПростоиИБросаниеНеНаСтанцииДиспетчерKPIРасширеннаяПодсказка" id="40"/>
+						</Button>
+						<Button name="ЗапросПростоиИБросаниеНаСтанцииДиспетчерKPI" id="41">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросПростоиИБросаниеНаСтанцииДиспетчерKPI</CommandName>
+							<ExtendedTooltip name="ЗапросПростоиИБросаниеНаСтанцииДиспетчерKPIРасширеннаяПодсказка" id="42"/>
+						</Button>
+						<Button name="ЗапросПростоиИБросаниеДиспетчерKPI" id="43">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросПростоиИБросаниеДиспетчерKPI</CommandName>
+							<ExtendedTooltip name="ЗапросПростоиИБросаниеДиспетчерKPIРасширеннаяПодсказка" id="44"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Группа4" id="45">
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<Button name="ЗапросДислокацияВагонов" id="49">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросДислокацияВагонов</CommandName>
+							<ExtendedTooltip name="ЗапросДислокацияВагоновРасширеннаяПодсказка" id="50"/>
+						</Button>
+						<Button name="ЗапросДислокацияВагоновСрезПоследних" id="47">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросДислокацияВагоновСрезПоследних</CommandName>
+							<ExtendedTooltip name="ЗапросДислокацияВагоновСрезПоследнихРасширеннаяПодсказка" id="48"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -115,6 +170,111 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОтчетСтранныеДвижения</Action>
+		</Command>
+		<Command name="ОтчетПоЭкономикеИСтатистикеРейсов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по экономике и статистике рейсов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по экономике и статистике рейсов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчетПоЭкономикеИСтатистикеРейсов</Action>
+		</Command>
+		<Command name="ЗапросОперативныйОтчетКлиентаВагоныАсбест" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос оперативный отчет клиента вагоны асбест</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос оперативный отчет клиента вагоны асбест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросОперативныйОтчетКлиентаВагоныАсбест</Action>
+		</Command>
+		<Command name="ЗапросПростоиИБросаниеНеНаСтанцииДиспетчерKPI" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос простои и бросание не на станции диспетчер KPI</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос простои и бросание не на станции диспетчер KPI</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросПростоиИБросаниеНеНаСтанцииДиспетчерKPI</Action>
+		</Command>
+		<Command name="ЗапросПростоиИБросаниеНаСтанцииДиспетчерKPI" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос простои и бросание на станции диспетчер KPI</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос простои и бросание на станции диспетчер KPI</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросПростоиИБросаниеНаСтанцииДиспетчерKPI</Action>
+		</Command>
+		<Command name="ЗапросПростоиИБросаниеДиспетчерKPI" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос простои и бросание диспетчер KPI</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос простои и бросание диспетчер KPI</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросПростоиИБросаниеДиспетчерKPI</Action>
+		</Command>
+		<Command name="ЗапросДислокацияВагоновСрезПоследних" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос дислокация вагонов срез последних</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос дислокация вагонов срез последних</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросДислокацияВагоновСрезПоследних</Action>
+		</Command>
+		<Command name="ЗапросДислокацияВагонов" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос дислокация вагонов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос дислокация вагонов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросДислокацияВагонов</Action>
 		</Command>
 	</Commands>
 </Form>
