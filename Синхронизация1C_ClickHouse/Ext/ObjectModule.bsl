@@ -8,7 +8,7 @@
 	РегистрационныеДанные = Новый Структура();
 	РегистрационныеДанные.Вставить("Вид", "ДополнительнаяОбработка");
 	РегистрационныеДанные.Вставить("Наименование", Синоним);
-	РегистрационныеДанные.Вставить("Версия", "1.0.5");
+	РегистрационныеДанные.Вставить("Версия", "1.0.6");
 	РегистрационныеДанные.Вставить("БезопасныйРежим", Ложь);
 	РегистрационныеДанные.Вставить("Информация", "Обработка "+Синоним); 
 	РегистрационныеДанные.Вставить("ВерсияБСП", "1.2.1.4");
@@ -23,6 +23,8 @@
 	ДобавитьКоманду(ТаблицаКоманд, "ОтчетСтранныеДвижения фоновое", "Синхронизация1C_ClickHouseНаСервере_ОтчетСтранныеДвижения" , "ВызовСерверногоМетода");
 	ДобавитьКоманду(ТаблицаКоманд, "ОтчетПоЭкономикеИСтатистикеРейсов фоновое", "Синхронизация1C_ClickHouseНаСервере_ОтчетПоЭкономикеИСтатистикеРейсов" , "ВызовСерверногоМетода");
 	ДобавитьКоманду(ТаблицаКоманд, "ОперативныйОтчетКлиентаВагоныАсбест фоновое", "Синхронизация1C_ClickHouseНаСервере_ОперативныйОтчетКлиентаВагоныАсбест" , "ВызовСерверногоМетода");
+	ДобавитьКоманду(ТаблицаКоманд, "ОперативныйОтчетКлиентаВагоныАсбестV2 фоновое", "Синхронизация1C_ClickHouseНаСервере_ОперативныйОтчетКлиентаВагоныАсбестV2" , "ВызовСерверногоМетода");
+	ДобавитьКоманду(ТаблицаКоманд, "ОперативныйОтчетКлиентаВагоныДжабыкV2 фоновое", "Синхронизация1C_ClickHouseНаСервере_ОперативныйОтчетКлиентаВагоныДжабыкV2" , "ВызовСерверногоМетода");
 	//
 	ДобавитьКоманду(ТаблицаКоманд, "ЗапросПростоиИБросаниеНеНаСтанцииДиспетчерKPI фоновое", "Синхронизация1C_ClickHouseНаСервере_ЗапросПростоиИБросаниеНеНаСтанцииДиспетчерKPI" , "ВызовСерверногоМетода");
 	ДобавитьКоманду(ТаблицаКоманд, "ЗапросПростоиИБросаниеНаСтанцииДиспетчерKPI фоновое", "Синхронизация1C_ClickHouseНаСервере_ЗапросПростоиИБросаниеНаСтанцииДиспетчерKPI" , "ВызовСерверногоМетода");
@@ -39,7 +41,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start												 
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start	 
 Функция ВыполнитьКоманду(ИдентификаторКоманды, ПараметрыКоманды = Неопределено) Экспорт
 	
 	МассивПодстроки = СтрРазделить(ИдентификаторКоманды, "_");
@@ -52,7 +54,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start		  
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start																						
 Функция ЗаполнитьПараметры() Экспорт
 	ТекущаяДата = ТекущаяДата();
 	СтруктураПараметры = Новый Структура;
@@ -69,7 +71,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start			   
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start										   
 Функция ПолучитьТаблицуКоманд()
  
      Команды = Новый ТаблицаЗначений;
@@ -80,10 +82,10 @@
      Команды.Колонки.Добавить("Модификатор", Новый ОписаниеТипов("Строка"));
      Возврат Команды;
  
- КонецФункции
+КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
  
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start		   
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start																					 
 Процедура ДобавитьКоманду(ТаблицаКоманд, Представление, Идентификатор, Использование, ПоказыватьОповещение = Ложь, Модификатор = "")
  
       НоваяКоманда = ТаблицаКоманд.Добавить();
@@ -96,7 +98,7 @@
 КонецПроцедуры
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start											  
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start 
 Процедура ВыгрузитьДанныеClickHouseНаСервере(Параметры, МассивПодстроки = Неопределено) Экспорт
 	
 	//
@@ -105,7 +107,7 @@
 		БазаСоздана = ВыполнитьЗапросPOST_ClickHouse(ТекстЗапроса, Параметры);
 	КонецЕсли;
 	Параметры.Вставить("ИмяТаблицыТранслит", Транслит(Параметры.ИмяТаблицы));
-	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start																				 
+	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start		  
 	//
 	ПараметрыЗапроса = ПолучитьСтруктуруПараметровЗапроса(Параметры);
 	//
@@ -123,7 +125,7 @@
 КонецПроцедуры
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end																					
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start			   
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start										   
 Функция ПолучитьКлючиClickHouse_ОперативныйОтчетЛогисты()
 	М = Новый Массив;
 	М.Добавить("Период");
@@ -140,16 +142,16 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start			   
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start									   
 Функция ВернутьДату_Запрос_НаСервере(ИмяПоля, ПериодОтчета, НоваяДатаОтчета)
-	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start
+	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start																				 
 	Если ИмяПоля = "ДатаОтчетаСутки1" Тогда
 		Возврат НачалоДня(ДатаДнейНазад(ПериодОтчета, 1));
 	КонецЕсли;
 	Если ИмяПоля = "ДатаОтчетаСутки2" Тогда
 		Возврат КонецДня(ДатаДнейНазад(ПериодОтчета, 1));
 	КонецЕсли;
-	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end
+	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end																			   
 	Если ИмяПоля = "Дата1" Тогда
 		Возврат НачалоМесяца(ПериодОтчета);
 	КонецЕсли;
@@ -162,7 +164,7 @@
 	Если ИмяПоля = "Период" Тогда
 		Возврат НачалоДня(ПериодОтчета);
 	КонецЕсли;
-	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start
+	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start																				 
 	Если ИмяПоля = "ДатаОтчетаВывод" Тогда
 		Возврат Формат(НачалоДня(ПериодОтчета), "ДФ=dd.MM.yyyy");
 	КонецЕсли;
@@ -181,7 +183,7 @@
 	Если ИмяПоля = "КонецОтчета" Тогда
 		Возврат НачалоДня(ПериодОтчета);
 	КонецЕсли;
-	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end
+	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end																			   
 	Если ИмяПоля = "ДатаПланНачало" Тогда
 		Возврат НачалоМесяца(ПериодОтчета);
 	КонецЕсли;
@@ -191,11 +193,11 @@
 	Если ИмяПоля = "ТекущаяДатаОтчетБаланс" Тогда
 		Возврат КонецДня(НоваяДатаОтчета);
 	КонецЕсли;
-	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start
+	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start																				 
 	Если ИмяПоля = "ТекущаяДата" Тогда
 		Возврат НачалоДня(НоваяДатаОтчета);
 	КонецЕсли;
-	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end
+	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end																			   
 	Если ИмяПоля = "ТекущаяДатаОтчетЗаказ" Тогда
 		Возврат КонецДня(НоваяДатаОтчета);
 	КонецЕсли;
@@ -240,7 +242,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start																				   
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start			   
 Функция ПолучитьСтруктуруПараметровЗапроса(Параметры)
 	СтандартнаяОбработка = Ложь;
 	
@@ -251,7 +253,7 @@
 	ПараметрыМакета = СхемаКомпоновкиДанных.Параметры;
 	ПоляНабораДанных = СхемаКомпоновкиДанных.НаборыДанных[0].Поля;
 	МассивПолей = ВернутьМассивПорядокПериодИзНабораДанных(ПоляНабораДанных);
-	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start																				 
+	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start		  
 	МассивПолейКлючейПериод = ВернутМассивПолейКлючейПериодИзНабораДанных(ПоляНабораДанных);
 	Если НачалоДня(Параметры.ДатаНачала) <> НачалоДня(Параметры.ДатаОкончания) Тогда
 		КоличествоДнейНазад	= РозностьВДнях(Параметры.ДатаОкончания, Параметры.ДатаНачала);	
@@ -260,11 +262,11 @@
 	КонецЕсли;
 	
 	Возврат Новый Структура("Запрос, ПараметрыМакета, ПоляНабораДанных, МассивПолей, МассивПолейКлючейПериод, КоличествоДнейНазад", Запрос, ПараметрыМакета, ПоляНабораДанных, МассивПолей, МассивПолейКлючейПериод, КоличествоДнейНазад);
-	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end																			   
+	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end		 
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start			 
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start									
 Функция ПолучитьПараметрМакетаПоИмени(ИмяПараметра, ПараметрыМакета)
 	Для каждого СтрокаПараметра из ПараметрыМакета Цикл
 		Если СтрокаПараметра.Имя = ИмяПараметра Тогда
@@ -278,14 +280,14 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start			 
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start										
 Функция УстановитьПараметрыЗапросаПоУмолчанию(Параметры, ПараметрыЗапроса)
 	
 	Запрос = ПараметрыЗапроса.Запрос;
 	ПараметрыМакета = ПараметрыЗапроса.ПараметрыМакета;
 	ПоляНабораДанных = ПараметрыЗапроса.ПоляНабораДанных;
 	МассивПолей = ПараметрыЗапроса.МассивПолей;
-	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start																				 
+	//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start	  
 	МассивПолейКлючейПериод = ПараметрыЗапроса.МассивПолейКлючейПериод;
 	//
 	Если Не ЕстьТаблицаВClickHouse(Параметры.ИмяТаблицы, Параметры) Тогда
@@ -313,7 +315,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start			
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start									  
 Процедура ВыгрузитьДанныеClickHouse_Запрос_НаСервере(Запрос, Параметры, ПараметрыЗапроса)
 	
 	ПараметрыМакета = ПараметрыЗапроса.ПараметрыМакета;
@@ -348,25 +350,25 @@
 КонецПроцедуры
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:3 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start									  
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start											  
 Функция ДатаДнейВперед(ДатаНачала, КоличествоДней)
 	Возврат НачалоДня(ДатаНачала) + 60 * 60 * 24 * КоличествоДней; 
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:3 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start				
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start									
 Функция ДатаДнейНазад(ДатаНачала, КоличествоДней)
 	Возврат НачалоДня(ДатаНачала) - 60 * 60 * 24 * КоличествоДней; 
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:3 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start				
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start										
 Функция РозностьВДнях(ДатаОкончания, ДатаНачала)
 	Возврат (НачалоДня(ДатаОкончания) - НачалоДня(ДатаНачала)) / (60 * 60 * 24); 
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:3 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start		   
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start																						 
 Процедура ЗаписатьРезультатЗапросаClickHouseНаСервере(Запрос, Параметры, ПериодДата, ПоляНабораДанных = Неопределено, МассивПолей = Неопределено)
 	РезультатЗапроса = Запрос.Выполнить();
 	МассивПолейЗапрос = ВернутьМассивПорядокПериодИзРезультатаЗапроса(РезультатЗапроса);
@@ -375,24 +377,42 @@
 	КонецЕсли;
 	//
 	ВыборкаРезультата = РезультатЗапроса.Выгрузить(ОбходРезультатаЗапроса.Прямой);
-	Для каждого СтрокаР из ВыборкаРезультата Цикл
-		ВставитьЗаписьВClickHouse(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос);	
-	КонецЦикла;
+	ОднимФайлом = Истина;
+	Если ОднимФайлом Тогда
+		СтрокиТекстаЗапроса = "";
+		КоличествоСтрокМаксЗаРаз = 1000;
+		КоличествоСтрокОбработано = 0;
+		ТекстЗапроса = "INSERT INTO " + Параметры.ИмяБазы +"." + Параметры.ИмяТаблицыТранслит + " (*)";
+		ЗначенияЗапроса = "";
+		КоличествоЗаписей = ВыборкаРезультата.Количество();
+		ИндексЗаписи = 0;
+		Для каждого СтрокаР из ВыборкаРезультата Цикл
+			КоличествоСтрокОбработано = КоличествоСтрокОбработано + 1;
+			ИндексЗаписи = ИндексЗаписи + 1;
+			Если КоличествоСтрокОбработано = КоличествоСтрокМаксЗаРаз ИЛИ ИндексЗаписи = КоличествоЗаписей Тогда
+				ЗначенияЗапроса = ЗначенияЗапроса + ВернутьЗначенияЗапрос(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос);
+				РезультатВыполненияЗапроса = ВыполнитьЗапросPOST_ClickHouse(ТекстЗапроса + " VALUES " + ЗначенияЗапроса + ";", Параметры);
+				КоличествоСтрокОбработано = 0;
+				ЗначенияЗапроса = "";
+			Иначе
+				ЗначенияЗапроса = ЗначенияЗапроса + ВернутьЗначенияЗапрос(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос);
+				ЗначенияЗапроса = ЗначенияЗапроса + "," + Символы.ПС;		
+			КонецЕсли;
+		КонецЦикла;
+		
+	Иначе
+		Для каждого СтрокаР из ВыборкаРезультата Цикл
+			ВставитьЗаписьВClickHouse(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос);	
+		КонецЦикла;
+	КонецЕсли;
 КонецПроцедуры
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:3 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start				
-Функция ВставитьЗаписьВClickHouse(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных = Неопределено, МассивПолей = Неопределено, МассивПолейЗапрос = Неопределено)
-	ВставитьЗаписьВClickHouse_ПериодСхемаКомпоновкиДанных(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос);
-КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end
-
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start											  
-Процедура ВставитьЗаписьВClickHouse_ПериодСхемаКомпоновкиДанных(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос)
-	КоличествоПолей = МассивПолей.Количество();
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 05-11-2023 9:30 start
+Функция ВернутьЗначенияЗапрос(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос)
 	Счетчик = 0;
-	ТекстЗапроса = "INSERT INTO " + Параметры.ИмяБазы +"." + Параметры.ИмяТаблицыТранслит + " (*)";
-	ТекстЗапросаПоля = "VALUES (";
+	КоличествоПолей = МассивПолей.Количество();
+	ТекстЗапросаПоля = "(";
 	Для каждого СтрокаП из МассивПолей Цикл
 		Счетчик = Счетчик + 1;
 		ЗначениеПоля = Неопределено;
@@ -439,13 +459,36 @@
 		КонецЕсли;
 	КонецЦикла;
 	ТекстЗапросаПоля = ТекстЗапросаПоля + ")";
-	Ошибка = "";
-	РезультатВыполненияЗапроса = ВыполнитьЗапросPOST_ClickHouse(ТекстЗапроса + " " + ТекстЗапросаПоля, Параметры);
+	Возврат ТекстЗапросаПоля;
+КонецФункции
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 05-11-2023 9:30 start
+
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start
+Функция ВставитьЗаписьВClickHouse(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных = Неопределено, МассивПолей = Неопределено, МассивПолейЗапрос = Неопределено)
+	ВставитьЗаписьВClickHouse_ПериодСхемаКомпоновкиДанных(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос);
+КонецФункции
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end
+
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start
+Процедура ВставитьЗаписьВClickHouse_ПериодСхемаКомпоновкиДанных(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос)
+	ТекстДляЗапроса = ВернутьТекстЗапроса(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос);
+	РезультатВыполненияЗапроса = ВыполнитьЗапросPOST_ClickHouse(ТекстДляЗапроса, Параметры);
 	Ошибка = "";
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end																				  
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start			   
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start
+Функция ВернутьТекстЗапроса(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос)
+	ТекстЗапроса = "INSERT INTO " + Параметры.ИмяБазы +"." + Параметры.ИмяТаблицыТранслит + " (*)";
+	ТекстЗапросаПоля = " VALUES " + ВернутьЗначенияЗапрос(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос);
+	Ошибка = "";
+	ТекстДляЗапроса = ТекстЗапроса + " " + ТекстЗапросаПоля + ";";
+	Возврат ТекстДляЗапроса;	
+КонецФункции
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end																				  
+						
+
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start										   
 Функция ПолучитьВремяUTC(ПараметрДата) 
 	ПериодДень = День(ПараметрДата);
 	ПериодМесяц = Месяц(ПараметрДата);
@@ -457,13 +500,13 @@
 КонецФункции 
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start		 
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start																					   
 Функция ПолучитьUnixTS(ПараметрДата) 
 	Возврат ВернутьЧислоБезПробелов(УниверсальноеВремя(ПараметрДата) - '19700101'); 
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start		  
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start																						
 Функция ВернутьЧислоБезПробелов(ЧислоИзСтроки = 0, ЭтоГод = Ложь)
 	Если ЭтоГод Тогда
 		СтрокаЧисло = Формат(ЧислоИзСтроки, "ЧЦ=4; ЧН=0000; ЧВН=; ЧГ=0");
@@ -479,13 +522,13 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start											 
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start
 Функция ВернутьЧислоБезПробеловСНулями(ЧислоИзСтроки)
 	Возврат Формат(ЧислоИзСтроки, "ЧЦ=2; ЧН=00; ЧВН=; ЧГ=0");
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start												  
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start	  
 Функция НайтиПолейВМассиве(МассивП, Поле)
 	Для каждого СтрокаМ из МассивП Цикл
 		Если СтрокаМ = Поле Тогда
@@ -496,7 +539,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start											  
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start	 
 Функция ВернутьМассивПорядокПериодИзРезультатаЗапроса(РезультатЗапроса)
 	М = Новый Массив;
 	ИмяПериод = "Период"; 	
@@ -508,7 +551,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start		 
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start																					   
 Функция ВернутьМассивПорядокИзРезультатаЗапроса(РезультатЗапроса)
 	М = Новый Массив;
 	Для каждого Колонка из РезультатЗапроса.Колонки Цикл
@@ -516,9 +559,9 @@
 	КонецЦикла;
 	Возврат М;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start											 
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start
 Функция ВернутьМассивПорядокПериодИзНабораДанных(ПоляНабораДанных)
 	М = Новый Массив;
 	ИмяПериод = "Период"; 	
@@ -529,8 +572,7 @@
 	Возврат М;
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end
-
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start																					
+																							//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start			 
 Функция ВернутМассивПолейКлючейПериодИзНабораДанных(ПоляНабораДанных)
 	М = Новый Массив;
 	ИмяПериод = "Период"; 	
@@ -552,7 +594,9 @@
 	КонецЦикла;
 	Возврат М;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start
+
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start
 Функция ВернутьМассивПорядокИзНабораДанных(ПоляНабораДанных)
 	М = Новый Массив;
 	Для каждого Поле из ПоляНабораДанных Цикл
@@ -560,8 +604,9 @@
 	КонецЦикла;
 	Возврат М;
 КонецФункции
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start																					
 Функция ЕстьБазаВClickHouse(ИмяБазы, Параметры)
 	Запрос = "SELECT name, comment FROM system.databases WHERE name = '" + Параметры.ИмяБазы + "';";
 	//
@@ -579,14 +624,14 @@
 	КонецЕсли;
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
-
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start												 
+																				  
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start 
 Функция ТекстЗапросаСозданиеБазыДанных(Параметры)
 	Возврат "CREATE DATABASE " + Параметры.ИмяБазы + " COMMENT 'The Metrics database';";
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start			   
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start									   
 Функция ТекстЗапросаСозданиеТаблицыПериодСхемаКомпоновкиДанных(Параметры, ПараметрыМакета, ПоляМакета, ПоляКлючи)
 	ТекстЗапроса = "CREATE TABLE " + Параметры.ИмяБазы +"." + Параметры.ИмяТаблицыТранслит + "";
 	ТекстЗапроса = ТекстЗапроса + Символы.ПС + " (	" + Транслит("Период") + " Datetime,";
@@ -610,7 +655,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start			
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start								  
 Функция ПолучитьКлючИзМассива(МассивКлючей)
 	КлючМ = Транслит(МассивКлючей[0]);
 	Количество = МассивКлючей.Количество();
@@ -625,7 +670,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start			
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start								  
 Функция ПолучитьТипПоляНабора(ПолеНабора)
 	
 	Если ТипЗнч(ПолеНабора.ТипЗначения) = Тип("ОписаниеТипов") Тогда
@@ -645,7 +690,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start				
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start									
 Функция ВыполнитьЗапросPOST_ClickHouse(ТекстЗапроса, Параметры)
 	Запрос = ТекстЗапроса;
 	//
@@ -669,7 +714,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start				
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start									
 Функция ЕстьТаблицаВClickHouse(ИмяТаблицы, Параметры)
 	Запрос = "SELECT * FROM " + Параметры.ИмяБазы +"." + Параметры.ИмяТаблицыТранслит + " LIMIT 1;";
 	//
@@ -688,7 +733,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start				
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start										
 Функция ЭтоОшибкаЗапросаClickHouse(ТекстОтвета)
 	Если СтрНайти(ВРег(ТекстОтвета), "CODE: 32") Тогда
 		Возврат Истина;
@@ -709,7 +754,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start	  
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start																					   
 Функция Транслит(Строка) 
     
    Рез = СокрЛП(Строка);   
@@ -796,4 +841,4 @@
    Возврат(Рез);
   
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end																					 
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end

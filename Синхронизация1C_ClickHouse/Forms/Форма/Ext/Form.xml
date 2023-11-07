@@ -46,30 +46,25 @@
 							<CommandName>Form.Command.ОтчетПоЭкономикеИСтатистикеРейсов</CommandName>
 							<ExtendedTooltip name="ОтчетПоЭкономикеИСтатистикеРейсовРасширеннаяПодсказка" id="30"/>
 						</Button>
-						<Button name="ЗапросОперативныйОтчетКлиентаВагоныАсбест" id="31">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ЗапросОперативныйОтчетКлиентаВагоныАсбест</CommandName>
-							<ExtendedTooltip name="ЗапросОперативныйОтчетКлиентаВагоныАсбестРасширеннаяПодсказка" id="32"/>
-						</Button>
 					</ChildItems>
 				</Page>
 				<Page name="Группа3" id="37">
 					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="38"/>
 					<ChildItems>
-						<Button name="ЗапросПростоиИБросаниеНеНаСтанцииДиспетчерKPI" id="39">
+						<Button name="ЗапросПростоиИБросаниеНеНаСтанцииДиспетчер" id="39">
 							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ЗапросПростоиИБросаниеНеНаСтанцииДиспетчерKPI</CommandName>
-							<ExtendedTooltip name="ЗапросПростоиИБросаниеНеНаСтанцииДиспетчерKPIРасширеннаяПодсказка" id="40"/>
+							<CommandName>Form.Command.ЗапросПростоиИБросаниеНеНаСтанцииДиспетчер</CommandName>
+							<ExtendedTooltip name="ЗапросПростоиИБросаниеНеНаСтанцииДиспетчерРасширеннаяПодсказка" id="40"/>
 						</Button>
-						<Button name="ЗапросПростоиИБросаниеНаСтанцииДиспетчерKPI" id="41">
+						<Button name="ЗапросПростоиИБросаниеНаСтанцииДиспетчер" id="41">
 							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ЗапросПростоиИБросаниеНаСтанцииДиспетчерKPI</CommandName>
-							<ExtendedTooltip name="ЗапросПростоиИБросаниеНаСтанцииДиспетчерKPIРасширеннаяПодсказка" id="42"/>
+							<CommandName>Form.Command.ЗапросПростоиИБросаниеНаСтанцииДиспетчер</CommandName>
+							<ExtendedTooltip name="ЗапросПростоиИБросаниеНаСтанцииДиспетчерРасширеннаяПодсказка" id="42"/>
 						</Button>
-						<Button name="ЗапросПростоиИБросаниеДиспетчерKPI" id="43">
+						<Button name="ЗапросПростоиИБросаниеДиспетчер" id="43">
 							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ЗапросПростоиИБросаниеДиспетчерKPI</CommandName>
-							<ExtendedTooltip name="ЗапросПростоиИБросаниеДиспетчерKPIРасширеннаяПодсказка" id="44"/>
+							<CommandName>Form.Command.ЗапросПростоиИБросаниеДиспетчер</CommandName>
+							<ExtendedTooltip name="ЗапросПростоиИБросаниеДиспетчерРасширеннаяПодсказка" id="44"/>
 						</Button>
 					</ChildItems>
 				</Page>
@@ -85,6 +80,26 @@
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.ЗапросДислокацияВагоновСрезПоследних</CommandName>
 							<ExtendedTooltip name="ЗапросДислокацияВагоновСрезПоследнихРасширеннаяПодсказка" id="48"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Группа5" id="51">
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<Button name="ЗапросОперативныйОтчетКлиентаВагоныАсбест" id="31">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросОперативныйОтчетКлиентаВагоныАсбест</CommandName>
+							<ExtendedTooltip name="ЗапросОперативныйОтчетКлиентаВагоныАсбестРасширеннаяПодсказка" id="32"/>
+						</Button>
+						<Button name="ЗапросОперативныйОтчетКлиентаВагоныАсбестV2" id="53">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросОперативныйОтчетКлиентаВагоныАсбестV2</CommandName>
+							<ExtendedTooltip name="ЗапросОперативныйОтчетКлиентаВагоныАсбестV2РасширеннаяПодсказка" id="54"/>
+						</Button>
+						<Button name="ЗапросОперативныйОтчетКлиентаВагоныДжабыкV2" id="55">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросОперативныйОтчетКлиентаВагоныДжабыкV2</CommandName>
+							<ExtendedTooltip name="ЗапросОперативныйОтчетКлиентаВагоныДжабыкV2РасширеннаяПодсказка" id="56"/>
 						</Button>
 					</ChildItems>
 				</Page>
@@ -201,50 +216,50 @@
 			</ToolTip>
 			<Action>ЗапросОперативныйОтчетКлиентаВагоныАсбест</Action>
 		</Command>
-		<Command name="ЗапросПростоиИБросаниеНеНаСтанцииДиспетчерKPI" id="7">
+		<Command name="ЗапросПростоиИБросаниеНеНаСтанцииДиспетчер" id="7">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Запрос простои и бросание не на станции диспетчер KPI</v8:content>
+					<v8:content>Запрос простои и бросание не на станции диспетчер</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Запрос простои и бросание не на станции диспетчер KPI</v8:content>
+					<v8:content>Запрос простои и бросание не на станции диспетчер</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ЗапросПростоиИБросаниеНеНаСтанцииДиспетчерKPI</Action>
+			<Action>ЗапросПростоиИБросаниеНеНаСтанцииДиспетчер</Action>
 		</Command>
-		<Command name="ЗапросПростоиИБросаниеНаСтанцииДиспетчерKPI" id="8">
+		<Command name="ЗапросПростоиИБросаниеНаСтанцииДиспетчер" id="8">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Запрос простои и бросание на станции диспетчер KPI</v8:content>
+					<v8:content>Запрос простои и бросание на станции диспетчер</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Запрос простои и бросание на станции диспетчер KPI</v8:content>
+					<v8:content>Запрос простои и бросание на станции диспетчер</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ЗапросПростоиИБросаниеНаСтанцииДиспетчерKPI</Action>
+			<Action>ЗапросПростоиИБросаниеНаСтанцииДиспетчер</Action>
 		</Command>
-		<Command name="ЗапросПростоиИБросаниеДиспетчерKPI" id="9">
+		<Command name="ЗапросПростоиИБросаниеДиспетчер" id="9">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Запрос простои и бросание диспетчер KPI</v8:content>
+					<v8:content>Запрос простои и бросание диспетчер</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Запрос простои и бросание диспетчер KPI</v8:content>
+					<v8:content>Запрос простои и бросание диспетчер</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ЗапросПростоиИБросаниеДиспетчерKPI</Action>
+			<Action>ЗапросПростоиИБросаниеДиспетчер</Action>
 		</Command>
 		<Command name="ЗапросДислокацияВагоновСрезПоследних" id="10">
 			<Title>
@@ -275,6 +290,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗапросДислокацияВагонов</Action>
+		</Command>
+		<Command name="ЗапросОперативныйОтчетКлиентаВагоныАсбестV2" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос оперативный отчет клиента вагоны асбест v2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос оперативный отчет клиента вагоны асбест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросОперативныйОтчетКлиентаВагоныАсбестV2</Action>
+		</Command>
+		<Command name="ЗапросОперативныйОтчетКлиентаВагоныДжабыкV2" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос оперативный отчет клиента вагоны джабык v2</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос оперативный отчет клиента вагоны асбест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросОперативныйОтчетКлиентаВагоныДжабыкV2</Action>
 		</Command>
 	</Commands>
 </Form>
