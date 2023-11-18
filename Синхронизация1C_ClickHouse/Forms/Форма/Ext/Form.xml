@@ -51,6 +51,11 @@
 				<Page name="Группа3" id="37">
 					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="38"/>
 					<ChildItems>
+						<Button name="ЗапросОтчетДислокацииДляЛогистаИМенеджера" id="57">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросОтчетДислокацииДляЛогистаИМенеджера</CommandName>
+							<ExtendedTooltip name="ЗапросОтчетДислокацииДляЛогистаИМенеджераРасширеннаяПодсказка" id="58"/>
+						</Button>
 						<Button name="ЗапросПростоиИБросаниеНеНаСтанцииДиспетчер" id="39">
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.ЗапросПростоиИБросаниеНеНаСтанцииДиспетчер</CommandName>
@@ -86,6 +91,21 @@
 				<Page name="Группа5" id="51">
 					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="52"/>
 					<ChildItems>
+						<Button name="ЗапросОперативныйОтчетКлиентаВагоныАсбестV28" id="63">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросОперативныйОтчетКлиентаВагоныАсбестV28</CommandName>
+							<ExtendedTooltip name="ЗапросОперативныйОтчетКлиентаВагоныАсбестV28РасширеннаяПодсказка" id="64"/>
+						</Button>
+						<Button name="ЗапросОперативныйОтчетКлиентаВагоныДжабыкV28" id="61">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросОперативныйОтчетКлиентаВагоныДжабыкV28</CommandName>
+							<ExtendedTooltip name="ЗапросОперативныйОтчетКлиентаВагоныДжабыкV28РасширеннаяПодсказка" id="62"/>
+						</Button>
+						<Button name="ЗапросОперативныйОтчетКлиентыКоммерсантыЛогистыДиспетчеры" id="59">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗапросОперативныйОтчетКлиентыКоммерсантыЛогистыДиспетчеры</CommandName>
+							<ExtendedTooltip name="ЗапросОперативныйОтчетКлиентыКоммерсантыЛогистыДиспетчерыРасширеннаяПодсказка" id="60"/>
+						</Button>
 						<Button name="ЗапросОперативныйОтчетКлиентаВагоныАсбест" id="31">
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.ЗапросОперативныйОтчетКлиентаВагоныАсбест</CommandName>
@@ -320,6 +340,66 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗапросОперативныйОтчетКлиентаВагоныДжабыкV2</Action>
+		</Command>
+		<Command name="ЗапросОтчетДислокацииДляЛогистаИМенеджера" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос отчет дислокации для логиста и менеджера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос отчет дислокации для логиста и менеджера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросОтчетДислокацииДляЛогистаИМенеджера</Action>
+		</Command>
+		<Command name="ЗапросОперативныйОтчетКлиентаВагоныАсбестV28" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос оперативный отчет клиента вагоны асбест v28</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос оперативный отчет клиента вагоны асбест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросОперативныйОтчетКлиентаВагоныАсбестV28</Action>
+		</Command>
+		<Command name="ЗапросОперативныйОтчетКлиентаВагоныДжабыкV28" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос оперативный отчет клиента вагоны джабык v28</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос оперативный отчет клиента вагоны асбест</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросОперативныйОтчетКлиентаВагоныДжабыкV28</Action>
+		</Command>
+		<Command name="ЗапросОперативныйОтчетКлиентыКоммерсантыЛогистыДиспетчеры" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос оперативный отчет клиенты коммерсанты логисты диспетчеры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрос оперативный отчет клиенты коммерсанты логисты диспетчеры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапросОперативныйОтчетКлиентыКоммерсантыЛогистыДиспетчеры</Action>
 		</Command>
 	</Commands>
 </Form>
