@@ -8,7 +8,7 @@
 
 <p>Экстрактор данных 1С в ClickHouse</p>
 
-
+https://kimkarus.ru/2024/02/12/instrukciya-polzovatelya/
 
 <p><a href="https://github.com/kimkarus/Extractor_1C_Clickhouse">https://github.com/kimkarus/Extractor_1C_Clickhouse</a></p>
 
