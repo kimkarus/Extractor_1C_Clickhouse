@@ -1,5 +1,5 @@
 # Extractor_1C_Clickhouse
-Data extractor from 1c to clickhouse / Экстрактор данных из 1с в кликхаус
+
 <div class="entry-content">
 								
 <h2 class="wp-block-heading">Название</h2>
@@ -262,9 +262,3 @@ Data extractor from 1c to clickhouse / Экстрактор данных из 1�
 
 
 <p>Have fun!</p>
-
-
-
-
-
-							</div>
