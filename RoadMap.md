@@ -1,6 +1,15 @@
+<b>v 1.0.8 </b>
+
+
+
+<p>-Реализована работа параллельной выгрузки. Параметр “ОднимФайлом = Ложь” в параметрах СКД<br>-Параметр “КоличествоВПортиции” стоит 1000, чтобы делить результат запроса на несколько потоков</p>
+
+
+
+<p>-Implemented parallel unloading. The parameter “One File = False” in the ACS parameters<br>-The “NumberInPortition” parameter costs 1000 to divide the query result into several threads</p>
+
+
 <b>v 1.0.7</b>
-
-
 
 <p>-Параметр батчей / порций / портиций выведен в отдельную переменную<br>-Улучшена работа с датами</p>
 
