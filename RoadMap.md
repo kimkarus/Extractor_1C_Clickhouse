@@ -1,8 +1,14 @@
 
-								
-<p>К текущему моменту сделано несколько коммитов для Опен сурс проекта: Экстрактор данных 1С в ClickHouse.<br><br>To date, several commits have been made for the Open source project: 1C data extractor in ClickHouse.<br><br>v 1.0.2<br><br>-Оптимизация кода<br>-Обработка новых полей<br><br>-Code optimization<br>-Processing of new fields<br><br>v 1.0.3<br><br>-Обработка нового поля “КоличествоДнейНазад”<br><br>-Оптимизация функции ВернутьЧислоБезПробелов<br><br>-Processing of the new field “Number of Days Ago”<br>-Optimization of the function Return Number Without Spaces<br><br>v 1.0.4<br><br>-Создание МассивПолейКлючейПериод<br>-Creating an Array of KeyFieldsPeriod<br><br>v 1.0.5<br><br>-Оптимизация кода<br>-Обработка новых полей<br>-Добавлены несколько полей дат<br><br>-Code optimization<br>-Processing of new fields<br>-Added several date fields<br><br>https://github.com/kimkarus/Extractor_1C_Clickhouse</p>
+<b>v 1.0.5</b><br>-Оптимизация кода<br>-Обработка новых полей<br>-Добавлены несколько полей дат<br><br>-Code optimization<br>-Processing of new fields<br>-Added several date fields<br><br>https://github.com/kimkarus/Extractor_1C_Clickhouse</p>
 
-								
+<b>v 1.0.4</b><br>-Создание МассивПолейКлючейПериод<br>-Creating an Array of KeyFieldsPeriod<br>
+
+<b>v 1.0.3</b>
+<br>-Обработка нового поля “КоличествоДнейНазад”<br><br>-Оптимизация функции ВернутьЧислоБезПробелов<br><br>-Processing of the new field “Number of Days Ago”<br>-Optimization of the function Return Number Without Spaces<br>
+
+<b>v 1.0.2</b>
+<br>-Оптимизация кода<br>-Обработка новых полей<br><br>-Code optimization<br>-Processing of new fields<br>
+
 <b>v 1.0.1 01.11.2023</b>
 
 
