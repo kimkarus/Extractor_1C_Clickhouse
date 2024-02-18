@@ -18,13 +18,9 @@
 <p>-The parameter of batches/portions/portions is displayed in a separate variable<br>-Improved work with dates</p>
 
 
+<b>v 1.0.6</b><br>-Реализована запись пачками / батчами по 1000 штук<br>-Оптимизация кода<br><br>-Implemented recording in packs / batches of 1000 pieces<br>-Code optimization<br>
 
-<p><a href="https://github.com/kimkarus/Extractor_1C_Clickhouse">https://github.com/kimkarus/Extractor_1C_Clickhouse</a></p>
-
-
-<b>v 1.0.6</b><br>-Реализована запись пачками / батчами по 1000 штук<br>-Оптимизация кода<br><br>-Implemented recording in packs / batches of 1000 pieces<br>-Code optimization<br><br>https://github.com/kimkarus/Extractor_1C_Clickhouse</p>
-
-<b>v 1.0.5</b><br>-Оптимизация кода<br>-Обработка новых полей<br>-Добавлены несколько полей дат<br><br>-Code optimization<br>-Processing of new fields<br>-Added several date fields<br><br>https://github.com/kimkarus/Extractor_1C_Clickhouse</p>
+<b>v 1.0.5</b><br>-Оптимизация кода<br>-Обработка новых полей<br>-Добавлены несколько полей дат<br><br>-Code optimization<br>-Processing of new fields<br>-Added several date fields<br>
 
 <b>v 1.0.4</b><br>-Создание МассивПолейКлючейПериод<br>-Creating an Array of KeyFieldsPeriod<br>
 
@@ -52,6 +48,3 @@
 
 <p>-added key fields for specific reports<br>-added a way to search for a date parameter for a query</p>
 
-
-
-<p><br><br>https://github.com/kimkarus/Extractor_1C_Clickhouse</p>
