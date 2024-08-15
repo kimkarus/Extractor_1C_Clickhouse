@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа1" id="33">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<Page name="Настройки" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<InputField name="Период" id="15">
+							<DataPath>Период</DataPath>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="17"/>
+						</InputField>
+						<CheckBoxField name="ПроверитьТаблицу" id="39">
+							<DataPath>ПроверитьТаблицу</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПроверитьТаблицуКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="ПроверитьТаблицуРасширеннаяПодсказка" id="41"/>
+						</CheckBoxField>
+						<InputField name="Адрес" id="20">
+							<DataPath>Объект.Адрес</DataPath>
+							<ContextMenu name="АдресКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="22"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Группа3" id="42">
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<Button name="ВызватьКонструктор" id="46">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ВызватьКонструктор</CommandName>
+							<ExtendedTooltip name="ВызватьКонструкторРасширеннаяПодсказка" id="47"/>
+						</Button>
+						<InputField name="ТекстЗапроса" id="48">
+							<DataPath>ТекстЗапроса</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ТекстЗапросаКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="ТекстЗапросаРасширеннаяПодсказка" id="50"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Группа4" id="44">
+					<Group>HorizontalIfPossible</Group>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<Button name="ЗапросОперативныйОтчетКлиентаВагоныАсбест" id="37">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КомандаПример</CommandName>
+							<ExtendedTooltip name="ЗапросОперативныйОтчетКлиентаВагоныАсбестРасширеннаяПодсказка" id="38"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.Extractor_1C_Clickhouse</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Период" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверитьТаблицу" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстЗапроса" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаПример" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда пример</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда пример</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПример</Action>
+		</Command>
+		<Command name="ВызватьКонструктор" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вызвать конструктор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вызвать конструктор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Конструктор</Action>
+		</Command>
+	</Commands>
+</Form>
