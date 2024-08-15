@@ -42,14 +42,37 @@
 						</InputField>
 					</ChildItems>
 				</Page>
-				<Page name="Группа3" id="42">
-					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="43"/>
+				<Page name="Запрос" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрос</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрос</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗапросРасширеннаяПодсказка" id="43"/>
 					<ChildItems>
-						<Button name="ВызватьКонструктор" id="46">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ВызватьКонструктор</CommandName>
-							<ExtendedTooltip name="ВызватьКонструкторРасширеннаяПодсказка" id="47"/>
-						</Button>
+						<UsualGroup name="Группа2" id="53">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="54"/>
+							<ChildItems>
+								<Button name="ВызватьКонструктор" id="46">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ВызватьКонструктор</CommandName>
+									<ExtendedTooltip name="ВызватьКонструкторРасширеннаяПодсказка" id="47"/>
+								</Button>
+								<Button name="ОтправитьЗапрос" id="51">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОтправитьЗапрос</CommandName>
+									<ExtendedTooltip name="ОтправитьЗапросРасширеннаяПодсказка" id="52"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 						<InputField name="ТекстЗапроса" id="48">
 							<DataPath>ТекстЗапроса</DataPath>
 							<TitleLocation>None</TitleLocation>
@@ -59,9 +82,21 @@
 						</InputField>
 					</ChildItems>
 				</Page>
-				<Page name="Группа4" id="44">
+				<Page name="КнопкаПример" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопка пример</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кнопка пример</v8:content>
+						</v8:item>
+					</ToolTip>
 					<Group>HorizontalIfPossible</Group>
-					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="45"/>
+					<ExtendedTooltip name="КнопкаПримерРасширеннаяПодсказка" id="45"/>
 					<ChildItems>
 						<Button name="ЗапросОперативныйОтчетКлиентаВагоныАсбест" id="37">
 							<Type>UsualButton</Type>
@@ -148,6 +183,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Конструктор</Action>
+		</Command>
+		<Command name="ОтправитьЗапрос" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить запрос</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить запрос</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьЗапрос</Action>
 		</Command>
 	</Commands>
 </Form>
