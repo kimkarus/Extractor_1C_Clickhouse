@@ -6,6 +6,21 @@
 		<Event name="BeforeClose">ПередЗакрытием</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="Группа3" id="77">
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<Button name="СохранитьНастройкиДляФона" id="70">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СохранитьНастройкиДляФона</CommandName>
+					<ExtendedTooltip name="СохранитьНастройкиДляФонаРасширеннаяПодсказка" id="71"/>
+				</Button>
+				<Button name="ПолучитьНастройкиДляФона" id="75">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПолучитьНастройкиДляФона</CommandName>
+					<ExtendedTooltip name="ПолучитьНастройкиДляФонаРасширеннаяПодсказка" id="76"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 		<Pages name="Группа1" id="33">
 			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="34"/>
@@ -86,6 +101,12 @@
 								<Event name="OnChange">ПериодПриИзменении</Event>
 							</Events>
 						</InputField>
+						<CheckBoxField name="ЭтоТекущаяДата" id="72">
+							<DataPath>Объект.ЭтоТекущаяДата</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЭтоТекущаяДатаКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="ЭтоТекущаяДатаРасширеннаяПодсказка" id="74"/>
+						</CheckBoxField>
 						<UsualGroup name="Группа2" id="53">
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="54"/>
@@ -131,6 +152,11 @@
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.КомандаПример</CommandName>
 							<ExtendedTooltip name="ЗапросОперативныйОтчетКлиентаВагоныАсбестРасширеннаяПодсказка" id="38"/>
+						</Button>
+						<Button name="ВыполнитьФоновоеЗадание" id="79">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ВыполнитьФоновоеЗадание</CommandName>
+							<ExtendedTooltip name="ВыполнитьФоновоеЗаданиеРасширеннаяПодсказка" id="80"/>
 						</Button>
 					</ChildItems>
 				</Page>
@@ -201,6 +227,51 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОтправитьЗапрос</Action>
+		</Command>
+		<Command name="СохранитьНастройкиДляФона" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки для фона</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки для фона</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьНастройкиДляФона</Action>
+		</Command>
+		<Command name="ПолучитьНастройкиДляФона" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить настройки для фона</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить настройки для фона</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьНастройкиДляФона</Action>
+		</Command>
+		<Command name="ВыполнитьФоновоеЗадание" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить фоновое задание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить фоновое задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьФоновоеЗадание</Action>
 		</Command>
 	</Commands>
 </Form>
