@@ -82,6 +82,9 @@
 							<DataPath>Период</DataPath>
 							<ContextMenu name="ПериодКонтекстноеМеню" id="16"/>
 							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="17"/>
+							<Events>
+								<Event name="OnChange">ПериодПриИзменении</Event>
+							</Events>
 						</InputField>
 						<UsualGroup name="Группа2" id="53">
 							<ShowTitle>false</ShowTitle>
