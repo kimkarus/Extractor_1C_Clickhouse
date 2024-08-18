@@ -130,6 +130,24 @@
 							<ContextMenu name="ТекстЗапросаКонтекстноеМеню" id="49"/>
 							<ExtendedTooltip name="ТекстЗапросаРасширеннаяПодсказка" id="50"/>
 						</InputField>
+						<InputField name="КоличествоДнейНазад" id="81">
+							<DataPath>Объект.КоличествоДнейНазад</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КоличествоДнейНазадКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="КоличествоДнейНазадРасширеннаяПодсказка" id="83"/>
+						</InputField>
+						<InputField name="КоличествоВПортиции" id="84">
+							<DataPath>Объект.КоличествоВПортиции</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КоличествоВПортицииКонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="КоличествоВПортицииРасширеннаяПодсказка" id="86"/>
+						</InputField>
+						<CheckBoxField name="ОднимФайлом" id="87">
+							<DataPath>Объект.ОднимФайлом</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОднимФайломКонтекстноеМеню" id="88"/>
+							<ExtendedTooltip name="ОднимФайломРасширеннаяПодсказка" id="89"/>
+						</CheckBoxField>
 					</ChildItems>
 				</Page>
 				<Page name="КнопкаПример" id="44">
