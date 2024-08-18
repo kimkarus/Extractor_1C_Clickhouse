@@ -40,11 +40,28 @@
 					</ToolTip>
 					<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="36"/>
 					<ChildItems>
-						<InputField name="Адрес" id="20">
-							<DataPath>Объект.Адрес</DataPath>
-							<ContextMenu name="АдресКонтекстноеМеню" id="21"/>
-							<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="22"/>
-						</InputField>
+						<UsualGroup name="Группа4" id="90">
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="91"/>
+							<ChildItems>
+								<CheckBoxField name="ЭтоЗащищенноеСоединение" id="92">
+									<DataPath>Объект.ЭтоЗащищенноеСоединение</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>SSL</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЭтоЗащищенноеСоединениеКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="ЭтоЗащищенноеСоединениеРасширеннаяПодсказка" id="94"/>
+								</CheckBoxField>
+								<InputField name="Адрес" id="20">
+									<DataPath>Объект.Адрес</DataPath>
+									<ContextMenu name="АдресКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="22"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 						<InputField name="Порт" id="55">
 							<DataPath>Объект.Порт</DataPath>
 							<ContextMenu name="ПортКонтекстноеМеню" id="56"/>
