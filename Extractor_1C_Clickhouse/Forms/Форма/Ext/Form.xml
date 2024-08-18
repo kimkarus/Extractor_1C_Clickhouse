@@ -165,6 +165,41 @@
 							<ContextMenu name="ОднимФайломКонтекстноеМеню" id="88"/>
 							<ExtendedTooltip name="ОднимФайломРасширеннаяПодсказка" id="89"/>
 						</CheckBoxField>
+						<InputField name="Периодичность" id="95">
+							<DataPath>Объект.Периодичность</DataPath>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Месяц</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Месяц</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>День</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">День</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ПериодичностьКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="ПериодичностьРасширеннаяПодсказка" id="97"/>
+						</InputField>
 					</ChildItems>
 				</Page>
 				<Page name="КнопкаПример" id="44">
