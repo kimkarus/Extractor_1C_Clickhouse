@@ -4,7 +4,7 @@
 								
 <h2 class="wp-block-heading">Название</h2>
 
-
+<p>Коммрческая версия => https://infostart.ru/marketplace/1970328/</p>
 
 <p>Экстрактор данных 1С в ClickHouse</p>
 
