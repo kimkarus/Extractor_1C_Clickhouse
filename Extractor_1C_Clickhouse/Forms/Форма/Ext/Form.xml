@@ -171,6 +171,12 @@
 							<ContextMenu name="ОднимФайломКонтекстноеМеню" id="88"/>
 							<ExtendedTooltip name="ОднимФайломРасширеннаяПодсказка" id="89"/>
 						</CheckBoxField>
+						<CheckBoxField name="ИспользоватьПериодВКлюче" id="101">
+							<DataPath>Объект.ИспользоватьПериодВКлюче</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьПериодВКлючеКонтекстноеМеню" id="102"/>
+							<ExtendedTooltip name="ИспользоватьПериодВКлючеРасширеннаяПодсказка" id="103"/>
+						</CheckBoxField>
 						<InputField name="Периодичность" id="95">
 							<DataPath>Объект.Периодичность</DataPath>
 							<ListChoiceMode>true</ListChoiceMode>
