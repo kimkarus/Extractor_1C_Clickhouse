@@ -62,6 +62,12 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="ПутьДоСертификата" id="98">
+							<DataPath>Объект.ПутьДоСертификата</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПутьДоСертификатаКонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="ПутьДоСертификатаРасширеннаяПодсказка" id="100"/>
+						</InputField>
 						<InputField name="Порт" id="55">
 							<DataPath>Объект.Порт</DataPath>
 							<ContextMenu name="ПортКонтекстноеМеню" id="56"/>
