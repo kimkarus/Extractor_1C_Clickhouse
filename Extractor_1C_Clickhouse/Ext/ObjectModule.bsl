@@ -907,6 +907,7 @@
 КонецФункции
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 16-01-2023 18:00 end
 
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 23-10-2024 18:00 start
 Функция ЭкранированиеСпециальныхСимволов(Значение)
 	Для Индекс = 0 По СтрДлина(Значение) Цикл
 		Символ = Значение[Индекс];
@@ -914,6 +915,7 @@
 		Значение[Индекс] = Символ; 
 	КонецЦикла;
 КонецФункции
+//<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 23-10-2024 18:00 end
 
 //<<%%>> ilya@kimkarus.ru @kimkarus kimkarus.ru # Ilya Kosarev 05-11-2023 9:30 start
 Функция ВернутьЗначенияЗапрос(СтрокаР, Параметры, ПериодДата, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница)
