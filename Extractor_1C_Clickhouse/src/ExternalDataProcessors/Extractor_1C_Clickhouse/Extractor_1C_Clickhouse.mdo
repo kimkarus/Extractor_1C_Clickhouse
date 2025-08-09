@@ -426,6 +426,18 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="99d2563c-d83b-4703-bf52-79f9cdf888ed">
+    <name>ИспользоватьТолькоДополнительныеКлючи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать только дополнительные ключи</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="14a3a85e-bfb6-4f83-9dca-9fbe48880a0e">
     <producedTypes>
       <objectType typeId="20caaa12-291a-43d2-86da-d0c45b14c0de" valueTypeId="216051ab-d1a1-4b3e-a623-bf25cd0de75b"/>
@@ -692,6 +704,18 @@
       <synonym>
         <key>ru</key>
         <value>Каждая портиция в своем фоне</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9a0f8a41-734e-4300-9b2d-0c028703278a">
+      <name>ИспользоватьТолькоДополнительныеКлючи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использовать только дополнительные ключи</value>
       </synonym>
       <type>
         <types>Boolean</types>

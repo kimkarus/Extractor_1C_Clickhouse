@@ -1872,6 +1872,10 @@
         <items xsi:type="form:FormField">
           <name>ИспользоватьПериодВКлюче</name>
           <id>101</id>
+          <title>
+            <key>ru</key>
+            <value>Период</value>
+          </title>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -1919,6 +1923,10 @@
         <items xsi:type="form:FormField">
           <name>ИспользоватьДополнительныеКлючи</name>
           <id>114</id>
+          <title>
+            <key>ru</key>
+            <value>Дополнительные</value>
+          </title>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -1963,6 +1971,53 @@
           <showInFooter>true</showInFooter>
           <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
         </items>
+        <items xsi:type="form:FormField">
+          <name>ИспользоватьТолькоДополнительныеКлючи</name>
+          <id>259</id>
+          <title>
+            <key>ru</key>
+            <value>Только дополнительные</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.ИспользоватьТолькоДополнительныеКлючи</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>ИспользоватьТолькоДополнительныеКлючиРасширеннаяПодсказка</name>
+            <id>261</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ИспользоватьТолькоДополнительныеКлючиКонтекстноеМеню</name>
+            <id>260</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -1970,7 +2025,7 @@
         </userVisible>
         <title>
           <key>ru</key>
-          <value>Группа2</value>
+          <value>Использовать в ключе:</value>
         </title>
         <extendedTooltip>
           <name>ГруппаНастройкаКлючейРасширеннаяПодсказка</name>
@@ -1993,6 +2048,7 @@
           <behavior>Auto</behavior>
           <showLeftMargin>true</showLeftMargin>
           <united>true</united>
+          <showTitle>true</showTitle>
           <throughAlign>Auto</throughAlign>
           <currentRowUse>Auto</currentRowUse>
         </extInfo>
