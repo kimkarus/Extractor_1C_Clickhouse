@@ -1837,10 +1837,6 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <title>
-          <key>ru</key>
-          <value>ГруппаНастройкаОднимФайломИПортиции</value>
-        </title>
         <extendedTooltip>
           <name>ГруппаНастройкаОднимФайломИПортицииРасширеннаяПодсказка</name>
           <id>228</id>
