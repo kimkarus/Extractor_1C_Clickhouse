@@ -438,6 +438,21 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="053319d8-d6eb-4678-9a2d-1f983066d059">
+    <name>КлючТаблицы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ таблицы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="14a3a85e-bfb6-4f83-9dca-9fbe48880a0e">
     <producedTypes>
       <objectType typeId="20caaa12-291a-43d2-86da-d0c45b14c0de" valueTypeId="216051ab-d1a1-4b3e-a623-bf25cd0de75b"/>
@@ -723,6 +738,21 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
     </attributes>
+    <attributes uuid="255b9838-0c84-4dec-812c-b0df14f2eba7">
+      <name>КлючТаблицы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ключ таблицы</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
   </tabularSections>
   <tabularSections uuid="65e7144a-59ae-4cf1-a1ef-023800c35aa2">
     <producedTypes>
@@ -793,6 +823,14 @@
     <synonym>
       <key>ru</key>
       <value>Скрипт выполнить my SQL</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="1421c07b-1cae-447b-be96-efca35ec6bb5">
+    <name>GoogleServiceJSON</name>
+    <synonym>
+      <key>ru</key>
+      <value>Google service JSON</value>
     </synonym>
     <templateType>BinaryData</templateType>
   </templates>
