@@ -453,6 +453,21 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="2816a11a-6d65-42ba-9e9e-bfa2d723dbdd">
+    <name>СпособОбновления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ обновления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="14a3a85e-bfb6-4f83-9dca-9fbe48880a0e">
     <producedTypes>
       <objectType typeId="20caaa12-291a-43d2-86da-d0c45b14c0de" valueTypeId="216051ab-d1a1-4b3e-a623-bf25cd0de75b"/>
@@ -748,6 +763,21 @@
         <types>String</types>
         <stringQualifiers>
           <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ff0cf085-9029-453e-ac85-d97a3e2634b1">
+      <name>СпособОбновления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Способ обновления</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
         </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>

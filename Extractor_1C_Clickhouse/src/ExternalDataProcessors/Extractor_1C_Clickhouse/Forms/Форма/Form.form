@@ -1389,28 +1389,141 @@
           <currentRowUse>Auto</currentRowUse>
         </extInfo>
       </items>
-      <items xsi:type="form:FormField">
-        <name>СоздаватьНесуществующиеПоляВБД</name>
-        <id>224</id>
-        <title>
-          <key>ru</key>
-          <value>Создавать несуществующие поля в БД</value>
-        </title>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаНесуществующиеПоляСпособОбновления</name>
+        <id>268</id>
+        <items xsi:type="form:FormField">
+          <name>СоздаватьНесуществующиеПоляВБД</name>
+          <id>224</id>
+          <title>
+            <key>ru</key>
+            <value>Создавать несуществующие поля в БД</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.СоздаватьНесуществующиеПоляВБД</segments>
+          </dataPath>
+          <toolTip>
+            <key>ru</key>
+            <value>Опция включает проверку полей на суествоование в БД и создает их в случае отсутствия</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>СоздаватьНесуществующиеПоляВБДРасширеннаяПодсказка</name>
+            <id>226</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СоздаватьНесуществующиеПоляВБДКонтекстноеМеню</name>
+            <id>225</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>CheckBoxField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>СпособОбновления</name>
+          <id>270</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.СпособОбновления</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>СпособОбновленияРасширеннаяПодсказка</name>
+            <id>272</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>СпособОбновленияКонтекстноеМеню</name>
+            <id>271</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <listChoiceMode>true</listChoiceMode>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>Добавление</value>
+              </presentation>
+              <value xsi:type="core:StringValue">
+                <value>Добавление</value>
+              </value>
+            </choiceList>
+            <choiceList>
+              <presentation>
+                <key>ru</key>
+                <value>Очистка</value>
+              </presentation>
+              <value xsi:type="core:StringValue">
+                <value>Очистка</value>
+              </value>
+            </choiceList>
+          </extInfo>
+        </items>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.СоздаватьНесуществующиеПоляВБД</segments>
-        </dataPath>
-        <toolTip>
+        <title>
           <key>ru</key>
-          <value>Опция включает проверку полей на суествоование в БД и создает их в случае отсутствия</value>
-        </toolTip>
+          <value>Группа2</value>
+        </title>
         <extendedTooltip>
-          <name>СоздаватьНесуществующиеПоляВБДРасширеннаяПодсказка</name>
-          <id>226</id>
+          <name>ГруппаНесуществующиеПоляСпособОбновленияРасширеннаяПодсказка</name>
+          <id>269</id>
           <visible>true</visible>
           <enabled>true</enabled>
           <userVisible>
@@ -1423,22 +1536,16 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <contextMenu>
-          <name>СоздаватьНесуществующиеПоляВБДКонтекстноеМеню</name>
-          <id>225</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>CheckBoxField</type>
-        <editMode>Enter</editMode>
-        <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
-        <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>AlwaysHorizontal</group>
+          <behavior>Auto</behavior>
+          <representation>WeakSeparation</representation>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
       </items>
       <items xsi:type="form:FormField">
         <name>Период</name>
@@ -3170,6 +3277,56 @@
           <contextMenu>
             <name>НастройкиЗапросовКлючТаблицыКонтекстноеМеню</name>
             <id>266</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>InputField</type>
+          <editMode>Enter</editMode>
+          <showInHeader>true</showInHeader>
+          <headerHorizontalAlign>Left</headerHorizontalAlign>
+          <showInFooter>true</showInFooter>
+          <extInfo xsi:type="form:InputFieldExtInfo">
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormField">
+          <name>НастройкиЗапросовСпособОбновления</name>
+          <id>273</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <dataPath xsi:type="form:DataPath">
+            <segments>Объект.НастройкиЗапросов.СпособОбновления</segments>
+          </dataPath>
+          <extendedTooltip>
+            <name>НастройкиЗапросовСпособОбновленияРасширеннаяПодсказка</name>
+            <id>275</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>НастройкиЗапросовСпособОбновленияКонтекстноеМеню</name>
+            <id>274</id>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
