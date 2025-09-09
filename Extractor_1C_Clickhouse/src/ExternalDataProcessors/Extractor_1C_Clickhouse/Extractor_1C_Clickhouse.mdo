@@ -468,6 +468,155 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="72cf2d4f-a0a6-4050-a85f-8e3597015f9b">
+    <name>GoogleSheets_type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Google sheets type</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="88b672b9-d8da-4733-8708-2c2215a38ad5">
+    <name>GoogleSheets_project_id</name>
+    <synonym>
+      <key>ru</key>
+      <value>Google sheets project id</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9e96253a-cac9-4e7e-abbe-1ae5bf20fa92">
+    <name>GoogleSheets_private_key_id</name>
+    <synonym>
+      <key>ru</key>
+      <value>Google sheets private key id</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="39dd052c-98ac-4f25-8cdc-f9a0dcd9c1ef">
+    <name>GoogleSheets_private_key</name>
+    <synonym>
+      <key>ru</key>
+      <value>Google sheets private key</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0f775ca3-cad6-4d04-81f2-0fcec783a7ee">
+    <name>GoogleSheets_client_email</name>
+    <synonym>
+      <key>ru</key>
+      <value>Google sheets client email</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e47246b1-7754-44e9-b526-f1a978b127bf">
+    <name>GoogleSheets_client_id</name>
+    <synonym>
+      <key>ru</key>
+      <value>Google sheets client id</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="04e9e226-242b-4c6b-82d9-bcc7af599ba7">
+    <name>GoogleSheets_auth_uri</name>
+    <synonym>
+      <key>ru</key>
+      <value>Google sheets auth uri</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="01f40f8a-1ebf-490e-a3b1-2ff12a6922d3">
+    <name>GoogleSheets_token_uri</name>
+    <synonym>
+      <key>ru</key>
+      <value>Google sheets token uri</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="916e2fdd-4b90-4a2e-90e6-5d467c445b25">
+    <name>GoogleSheets_auth_provider_x509_cert_url</name>
+    <synonym>
+      <key>ru</key>
+      <value>Google sheets auth provider x509 cert url</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9e0f914f-8010-4ddc-bdd7-04978aa369cb">
+    <name>GoogleSheets_client_x509_cert_url</name>
+    <synonym>
+      <key>ru</key>
+      <value>Google sheets client x509 cert url</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="550bdab8-66b2-48ca-ad78-92b69c9df62c">
+    <name>GoogleSheets_universe_domain</name>
+    <synonym>
+      <key>ru</key>
+      <value>Google sheets universe domain</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="14a3a85e-bfb6-4f83-9dca-9fbe48880a0e">
     <producedTypes>
       <objectType typeId="20caaa12-291a-43d2-86da-d0c45b14c0de" valueTypeId="216051ab-d1a1-4b3e-a623-bf25cd0de75b"/>
