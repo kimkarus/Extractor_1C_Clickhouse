@@ -3048,24 +3048,6 @@
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
-          <choiceList>
-            <presentation>
-              <key>ru</key>
-              <value>Месяц</value>
-            </presentation>
-            <value xsi:type="core:StringValue">
-              <value>Месяц</value>
-            </value>
-          </choiceList>
-          <choiceList>
-            <presentation>
-              <key>ru</key>
-              <value>День</value>
-            </presentation>
-            <value xsi:type="core:StringValue">
-              <value>День</value>
-            </value>
-          </choiceList>
         </extInfo>
       </items>
       <visible>true</visible>
