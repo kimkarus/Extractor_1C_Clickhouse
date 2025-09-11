@@ -101,7 +101,7 @@
 	СтруктураПараметры.Вставить("Логин", "default");
 	СтруктураПараметры.Вставить("Пароль", "password");
 	СтруктураПараметры.Вставить("ИмяБазы", "db_name");																			  
-	//ClickHouseDB, PostgreSQ, MySQL, REST, Local, Google Sheets
+	//ClickHouseDB, PostgreSQL, MySQL, REST, Local (CSV, JSON, XLS, XLSX), Google Sheets API
 	СтруктураПараметры.Вставить("ТипБазы", "ClickHouseDB");
 	СтруктураПараметры.Вставить("ФорматДанных", "SQL");
 	СтруктураПараметры.Вставить("ИмяТаблицы", "ИмяТаблицы");
