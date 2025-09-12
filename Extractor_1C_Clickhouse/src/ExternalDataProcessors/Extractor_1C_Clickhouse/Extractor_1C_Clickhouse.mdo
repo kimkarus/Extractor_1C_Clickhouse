@@ -6,7 +6,7 @@
   <name>Extractor_1C_Clickhouse</name>
   <synonym>
     <key>ru</key>
-    <value>Синхронизация из 1C в ClickHouseDB, PostgreSQL, MySQL и REST</value>
+    <value>Синхронизация из 1C в ClickHouseDB, PostgreSQL, MySQL, REST и Google Sheets</value>
   </synonym>
   <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="b846a666-f9e4-429f-a0b0-8fab0d217847"/>
   <defaultForm>ExternalDataProcessor.Extractor_1C_Clickhouse.Form.Форма</defaultForm>
