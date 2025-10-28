@@ -1,16 +1,17 @@
 import sys
 import mysql.connector
+#import hashlib
 
 debug = False
 pg_requests_0 = ""
 if debug:
-    argv_filepath_requests = "C://Users//Ilya//AppData//Local//Temp//93777315-c1a0-4adb-90e8-76ad75f92dfb.txt"
-    argv_filepath_results = "C://Users//Ilya//AppData//Local//Temp//3fbaa1ed-db38-44d9-8483-9cb5b51dc8fe.txt"
+    argv_filepath_requests = "E://1//d065034f-4fa7-4f97-a12b-919086ad22f0.txt"
+    argv_filepath_results = "E://1//results.txt"
     argv_dbname = 'argv_dbname'
     argv_user = 'argv_user'
     argv_password = 'argv_password'
     argv_host = 'argv_host'
-    argv_type = 'post'
+    argv_type = 'post' #get_json, get, post
     #pg_requests = "CREATE DATABASE kimkarus_metrics COMMENT 'The Metrics database';"
 else:
     argv_filepath_requests = sys.argv[1]
@@ -28,8 +29,10 @@ with open(argv_filepath_requests, 'r', encoding="utf-8-sig") as file:
 pg_requests = pg_requests.replace("\n", "")
 pg_requests = pg_requests.replace("\ufeff", "")
 
+#argv_password = hashlib.sha256(argv_password.encode('utf-8')).hexdigest()
+
 pg_requests_0 = pg_requests_0 + "" + pg_requests + ""
-conn = mysql.connector.connect(database=argv_dbname, user=argv_user, password=argv_password, host=argv_host)
+conn = mysql.connector.connect(database=argv_dbname, user=argv_user, password=argv_password, host=argv_host, auth_plugin='mysql_native_password')
 response_json = ""
 #
 if argv_type == 'get':
@@ -60,12 +63,24 @@ if argv_type == 'get_json':
         records = cursor.fetchall()
         for row in records:
             response_json_arr.append(dict(row))
+        cursor.close()
         response_json = str(response_json_arr)
         response_json = response_json.replace("' '", '')
         response_json = response_json.replace("::", "")
         response_json = response_json.replace("'", "\"")
         response_json = response_json.replace("None,", '"None",')
-        cursor.close()
+        response_json = response_json.replace('b"', "")
+        response_json = response_json.replace('(b"")', "")
+        response_json = response_json.replace('(")', "")
+        response_json = response_json.replace("bytearray", '"bytearray"')
+        response_json = response_json.replace("varchar(255)", '"varchar"')
+        response_json = response_json.replace('varchar"', "varchar")
+        response_json = response_json.replace('(UNI")', "")
+        response_json = response_json.replace('(MUL")', "")
+        response_json = response_json.replace(': datetime"', ': "datetime"')
+        response_json = response_json.replace(': int"', ': "int"')
+        response_json = response_json.replace(', ', ',')
+        response_json = response_json.replace(': ', ':')
         pg_commited = 1
     except Exception as e:
         cursor.close()
