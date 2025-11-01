@@ -81,6 +81,7 @@ if argv_type == 'get_json':
         response_json = response_json.replace(': int"', ': "int"')
         response_json = response_json.replace(', ', ',')
         response_json = response_json.replace(': ', ':')
+        response_json = response_json.replace('""varchar"', '"varchar"')
         pg_commited = 1
     except Exception as e:
         cursor.close()
