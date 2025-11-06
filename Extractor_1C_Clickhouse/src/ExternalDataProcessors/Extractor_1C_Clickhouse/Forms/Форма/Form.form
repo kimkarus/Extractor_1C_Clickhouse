@@ -232,7 +232,6 @@
               <key>ru</key>
               <value>Тип</value>
             </title>
-            <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
               <common>true</common>
