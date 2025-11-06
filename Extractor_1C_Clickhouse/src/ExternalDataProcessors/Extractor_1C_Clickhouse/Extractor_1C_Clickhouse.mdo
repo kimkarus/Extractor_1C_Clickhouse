@@ -1026,20 +1026,4 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="1b52d2cf-28ac-4bcc-ab25-33a50fe6bbb7">
-    <name>Скрипт_ВыполнитьPostgreSQL</name>
-    <synonym>
-      <key>ru</key>
-      <value>Скрипт выполнить postgre SQL</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
-  </templates>
-  <templates uuid="33b562b2-dd04-4ab4-b743-457af59d9546">
-    <name>Скрипт_ВыполнитьMySQL</name>
-    <synonym>
-      <key>ru</key>
-      <value>Скрипт выполнить my SQL</value>
-    </synonym>
-    <templateType>BinaryData</templateType>
-  </templates>
 </mdclass:ExternalDataProcessor>
