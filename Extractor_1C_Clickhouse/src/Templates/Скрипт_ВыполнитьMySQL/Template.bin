@@ -1,0 +1,122 @@
+import sys
+import mysql.connector
+#import hashlib
+
+debug = False
+pg_requests_0 = ""
+if debug:
+    argv_filepath_requests = "E://1//d065034f-4fa7-4f97-a12b-919086ad22f0.txt"
+    argv_filepath_results = "E://1//results.txt"
+    argv_dbname = 'argv_dbname'
+    argv_user = 'argv_user'
+    argv_password = 'argv_password'
+    argv_host = 'argv_host'
+    argv_type = 'post' #get_json, get, post
+    #pg_requests = "CREATE DATABASE kimkarus_metrics COMMENT 'The Metrics database';"
+else:
+    argv_filepath_requests = sys.argv[1]
+    argv_filepath_results = sys.argv[2]
+    argv_dbname = sys.argv[3]
+    argv_user = sys.argv[4]
+    argv_password = sys.argv[5]
+    argv_host = sys.argv[6]
+    argv_type = sys.argv[7]
+#
+pg_commited = 0
+#
+with open(argv_filepath_requests, 'r', encoding="utf-8-sig") as file:
+    pg_requests = file.read()
+pg_requests = pg_requests.replace("\n", "")
+pg_requests = pg_requests.replace("\ufeff", "")
+
+#argv_password = hashlib.sha256(argv_password.encode('utf-8')).hexdigest()
+
+pg_requests_0 = pg_requests_0 + "" + pg_requests + ""
+conn = mysql.connector.connect(database=argv_dbname, user=argv_user, password=argv_password, host=argv_host, auth_plugin='mysql_native_password')
+response_json = ""
+#
+if argv_type == 'get':
+    cursor = conn.cursor()
+    # run pg_requests
+    try:
+        cursor.execute(pg_requests_0)
+        # run transaction
+        records = cursor.fetchall()
+        for row in records:
+            pg_commited = 1
+        cursor.close()
+    except Exception as e:
+        cursor.close()
+        #wait = input("Press Enter to continue.")
+        results_file = open(argv_filepath_results, "w", encoding="utf-8")
+        results_file.write(str(e))
+        results_file.close()
+
+    conn.close()
+if argv_type == 'get_json':
+    cursor = conn.cursor(dictionary=True)
+    # run pg_requests
+    try:
+        cursor.execute(pg_requests_0)
+        # run transaction
+        response_json_arr = []
+        records = cursor.fetchall()
+        for row in records:
+            response_json_arr.append(dict(row))
+        cursor.close()
+        response_json = str(response_json_arr)
+        response_json = response_json.replace("' '", '')
+        response_json = response_json.replace("::", "")
+        response_json = response_json.replace("'", "\"")
+        response_json = response_json.replace("None,", '"None",')
+        response_json = response_json.replace('b"', "")
+        response_json = response_json.replace('(b"")', "")
+        response_json = response_json.replace('(")', "")
+        response_json = response_json.replace("bytearray", '"bytearray"')
+        response_json = response_json.replace("varchar(255)", '"varchar"')
+        response_json = response_json.replace('varchar"', "varchar")
+        response_json = response_json.replace('(UNI")', "")
+        response_json = response_json.replace('(MUL")', "")
+        response_json = response_json.replace(': datetime"', ': "datetime"')
+        response_json = response_json.replace(': int"', ': "int"')
+        response_json = response_json.replace(', ', ',')
+        response_json = response_json.replace(': ', ':')
+        pg_commited = 1
+    except Exception as e:
+        cursor.close()
+        #wait = input("Press Enter to continue.")
+        results_file = open(argv_filepath_results, "w", encoding="utf-8")
+        results_file.write(str(e))
+        results_file.close()
+
+    conn.close()
+if argv_type == 'post':
+    cursor = conn.cursor()
+    try:
+        # run pg_requests
+        cursor.execute(pg_requests_0)
+        # run transaction
+        conn.commit()
+        #
+        pg_commited = 1
+        cursor.close()
+    except Exception as e:
+        cursor.close()
+        #wait = input("Press Enter to continue.")
+        results_file = open(argv_filepath_results, "w", encoding="utf-8")
+        results_file.write(str(e))
+        results_file.close()
+
+    conn.close()
+
+if pg_commited == 1:
+    results_file = open(argv_filepath_results, "w", encoding="utf-8")
+    if argv_type == 'post' or argv_type == 'get':
+        results_file.write("OK")
+    else:
+        results_file.write(str(response_json))
+    results_file.close()
+else:
+    results_file = open(argv_filepath_results, "w", encoding="utf-8")
+    results_file.write("ERROR")
+    results_file.close()
