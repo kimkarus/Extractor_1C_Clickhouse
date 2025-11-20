@@ -11,6 +11,7 @@ if debug:
     argv_password = 'argv_password'
     argv_host = 'argv_host'
     argv_type = 'post'
+    argv_port = sys.argv[8].replace(" ", "")
     pg_requests = "SELECT 1 FROM pg_database  WHERE datname = 'argv_dbname';"
 else:
     argv_filepath_requests = sys.argv[1]
@@ -20,6 +21,7 @@ else:
     argv_password = sys.argv[5]
     argv_host = sys.argv[6]
     argv_type = sys.argv[7]
+    argv_port = sys.argv[8].replace(" ","")
 #
 pg_commited = 0
 #
@@ -29,7 +31,7 @@ pg_requests = pg_requests.replace("\n", "")
 pg_requests = pg_requests.replace("\ufeff", "")
 
 pg_requests_0 = pg_requests_0 + "" + pg_requests + ""
-conn = psycopg2.connect(dbname=argv_dbname, user=argv_user, password=argv_password, host=argv_host)
+conn = psycopg2.connect(dbname=argv_dbname, user=argv_user, password=argv_password, host=argv_host, port=argv_port)
 cursor = conn.cursor()
 #
 if argv_type == 'get':
