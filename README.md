@@ -1,14 +1,14 @@
 # Экстрактор данных 1С в ClickHouseDB, PostgreSQL, MySQL, REST, CSV, JSON, XLS, XLSX и Google Sheets / Extractor 1C Clickhouse, PostgreSQL, MySQL, REST, CSV, JSON, XLS, XLSX and Google Sheets
 
-Коммерческая версия => <https://kimkarus.ru/product/ekstraktor-dannyh-1s-v-clickhousedb-postgresql-i-mysql/>
+Коммерческая версия => <https://extractor1c.ru/product/ekstraktor-dannyh-1s-v-clickhousedb-postgresql-mysql-rest-i-google-sheets/>
 
-или у партнера => <https://infostart.ru/marketplace/1970328/>
+или у партнера => <https://extractor1c.ru/go/infostart-ekstraktor-1s/>
 
 Экстрактор данных 1С в ClickHouseDB, PostgreSQL, MySQL, REST, локальные файлы (CSV, JSON, XLS, XLSX) и Google Sheets.
 
-<https://kimkarus.ru/2024/02/12/instrukciya-polzovatelya/>
+<https://extractor1c.ru/novosti/instrukciya-polzovatelya/>
 
-<https://github.com/kimkarus/Extractor_1C_Clickhouse>
+<https://extractor1c.ru/go/github-extractor_1c_clickhouse/>
 
 Видео по быстрой установке и использованию
 
@@ -284,7 +284,7 @@ index-row - текущий индекс строки в запросе итер�
 
 ### Установка
 
-Инструкция по установке обработки - <https://kimkarus.ru/2025/02/08/instrukciya-po-ustanovke-ekstraktor-dannyh-1s-v-clickhouse/>
+Инструкция по установке обработки - <https://extractor1c.ru/baza-znanij/instrukciya-po-ustanovke-ekstraktor-dannyh-1s-v-clickhouse/>
 
 ### Настройка параметров
 
