@@ -1,4 +1,4 @@
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start
 Функция СведенияОВнешнейОбработке() Экспорт 
 	
 	ИмяОтчетаОбработки = ЭтотОбъект.Метаданные().Имя; 
@@ -34,17 +34,17 @@
 	Возврат РегистрационныеДанные;
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end																				  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start	 
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start	 
 Функция ВыполнитьКоманду(ИдентификаторКоманды, ПараметрыКоманды = Неопределено) Экспорт
 	
 	ВыполнитьКомандуСервер(ИдентификаторКоманды);
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-05-2025 19:30 start	 
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-05-2025 19:30 start	 
 Процедура ВыполнитьКомандуСервер(ИдентификаторКоманды) Экспорт
 	
 	МассивПодстроки = СтрРазделить(ИдентификаторКоманды, "_");
@@ -84,9 +84,9 @@
 	КонецЕсли;
 	
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-05-2025 19:30 end																				  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-05-2025 19:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-09-2025 9:30 start
 Функция ЗаполнитьПараметры() Экспорт
 	ТекущаяДата = ТекущаяДата();
 	СтруктураПараметры = Новый Структура;
@@ -133,9 +133,9 @@
 	СтруктураПараметры.Вставить("АбсолютныйПутьPython", "C:\Program Files\Python38\python.exe");
 	Возврат СтруктураПараметры;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start										   
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start										   
 Функция ПолучитьТаблицуКоманд()
  
      Команды = Новый ТаблицаЗначений;
@@ -147,9 +147,9 @@
      Возврат Команды;
  
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end
  
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start																					 
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start																					 
 Процедура ДобавитьКоманду(ТаблицаКоманд, Представление, Идентификатор, Использование, ПоказыватьОповещение = Ложь, Модификатор = "")
  
       НоваяКоманда = ТаблицаКоманд.Добавить();
@@ -160,9 +160,9 @@
       НоваяКоманда.Модификатор = Модификатор;
  
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end																				  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 9:30 start 
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 9:30 start 
 Процедура ВыгрузитьДанныеВПриемникНаСервере(Параметры, ТипКоманды = "") Экспорт
 	//
 	Параметры.Вставить("ИмяТаблицыТранслит", Транслит(Параметры.ИмяТаблицы));
@@ -227,9 +227,9 @@
 	//
 	ВыгрузитьДанныеВПриемник_Запрос_НаСервере(Запрос, Параметры, ПараметрыЗапроса);	
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 9:30 end																																							  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 9:30 end																																							  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 04-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 04-08-2025 9:30 start
 Функция ДатаСУчетомПериодичности(_Дата, Периодичность, ЭтоНачало = Истина)
 	Если Периодичность = "Месяц" Тогда
 		Если ЭтоНачало Тогда
@@ -257,9 +257,9 @@
 		КонецЕсли;
 	КонецЕсли;	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 04-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 04-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-05-2024 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-05-2024 9:30 start
 Функция ПолучитьОсобыеПараметры(ДополнительныеПараметры, ПараметрыМакета)
 	СтруктураПараметров = Новый Структура("Периодичность, ЕстьОсобоеПолеДатыОкончениеПериода");
 	
@@ -269,9 +269,9 @@
 	
 	Возврат СтруктураПараметров;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-05-2024 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-05-2024 9:30 end
 	
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-05-2024 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-05-2024 9:30 start
 Функция ВернутьМассивОсобыхПолейДатыОкончениеПериода()
 	МассивПолей = Новый Массив;
 	МассивПолей.Добавить("НачалоПериодаРегистрации");
@@ -282,9 +282,9 @@
 	МассивПолей.Добавить("ОкончаниеПериодаОтнесенияУслуг");
 	Возврат МассивПолей;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-05-2024 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-05-2024 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-05-2024 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-05-2024 9:30 start
 Функция ЕстьОсобоеПолеДатыОкончениеПериода(ПараметрыМакета)
 	МассивПолей = ВернутьМассивОсобыхПолейДатыОкончениеПериода();
 	
@@ -298,9 +298,9 @@
 	
 	Возврат Ложь;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-05-2024 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-05-2024 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 04-08-2025 9:30 start									   
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 04-08-2025 9:30 start									   
 Функция ВернутьДату_Запрос_НаСервере(ИмяПоля, ПериодОтчета, НоваяДатаОтчета, ДатаОкончанияОтчета, ОсобыеПараметры)
 	
 	Если ИмяПоля = "ДатаОтчетаСутки1" Тогда
@@ -427,17 +427,17 @@
 		Возврат ДатаСУчетомПериодичности(ПериодОтчета, ОсобыеПараметры.Периодичность, Истина);
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 04-08-2025 9:30 end																				  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 04-08-2025 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-08-2024 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-08-2024 19:30 start
 Функция ПолучитьСхемуКомпановкиДанныхПоЗапросу(_ТекстЗапроса)
 	СКД = СоздатьСхемуКомпоновкиДанных(_ТекстЗапроса);
 
 	Возврат СКД;	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-08-2024 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-08-2024 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-08-2024 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-08-2024 19:30 start
 Функция СоздатьСхемуКомпоновкиДанных(_ТекстЗапроса, СтруктураРесурсов = Неопределено, АвтоЗаполнениеДоступныхПолей = Истина, ИмяСтандартногоМакетаОформления = "")
 	СКД = Новый СхемаКомпоновкиДанных;
 	Запрос = Новый Запрос(_ТекстЗапроса);
@@ -577,9 +577,9 @@
 
 	Возврат СКД;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-08-2024 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-08-2024 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start			   
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start			   
 Функция ПолучитьСтруктуруПараметровЗапроса(Параметры) Экспорт
 	СтандартнаяОбработка = Ложь;
 	ДополнительныеПараметры = Новый Структура;
@@ -643,11 +643,11 @@
 
 	
 	Возврат Новый Структура("Запрос, ПараметрыМакета, ПоляНабораДанных, МассивПолей, МассивПолейКлючейПериод, ДополнительныеПараметры", Запрос, ПараметрыМакета, ПоляНабораДанных, МассивПолей, МассивПолейКлючейПериод, ДополнительныеПараметры);
-	//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end		 
+	//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 03-11-2023 9:30 end		 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 03-11-2023 9:30 start									
 Функция ПолучитьПараметрМакетаИПараметровПоИмени(ИмяПараметра, ПараметрыМакета, Параметры)
 	Для каждого СтрокаПараметра из ПараметрыМакета Цикл
 		Если СтрокаПараметра.Имя = ИмяПараметра Тогда
@@ -708,9 +708,9 @@
 
 	Возврат Неопределено;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end																				  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 03-11-2023 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start										
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start										
 Функция УстановитьПараметрыЗапросаПоУмолчанию(Параметры, ПараметрыЗапроса)
 	
 	Запрос = ПараметрыЗапроса.Запрос;
@@ -718,7 +718,7 @@
 	ПоляНабораДанных = ПараметрыЗапроса.ПоляНабораДанных;
 	МассивПолей = ПараметрыЗапроса.МассивПолей;
 	ДополнительныеПараметры = ПараметрыЗапроса.ДополнительныеПараметры;
-	//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start	  
+	//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 03-11-2023 9:30 start	  
 	МассивПолейКлючейПериод = ПараметрыЗапроса.МассивПолейКлючейПериод;
 	//
 	Если Не ЕстьТаблицаВ(Параметры.ИмяТаблицы, Параметры) Тогда
@@ -729,9 +729,9 @@
 			ТаблицаСоздана = ВыполнитьЗапросPOST(_ТекстЗапроса, Параметры);
 		КонецЕсли;
 	КонецЕсли;
-	//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-05-2024 9:30 start
+	//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-05-2024 9:30 start
 	ОсобыеПараметры = ПолучитьОсобыеПараметры(ДополнительныеПараметры, ПараметрыМакета);
-	//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-05-2024 9:30 end
+	//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-05-2024 9:30 end
 	Для каждого СтрокаПараметра из ПараметрыМакета Цикл
 		Если ТипЗнч(СтрокаПараметра.ТипЗначения) = Тип("ОписаниеТипов") Тогда
 			Если Строка(СтрокаПараметра.ТипЗначения) = "Стандартный период" Тогда				
@@ -746,13 +746,13 @@
 			КонецЕсли; 
 		КонецЕсли;
 	КонецЦикла;
-	//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end
+	//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 03-11-2023 9:30 end
 	Возврат Запрос;
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 14-03-2024 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 14-03-2024 19:30 start
 Функция СтрРазделитьРасширенная(Строка, Разделитель = ",", ВключатьПустые = Ложь,
 	СокращатьНепечатаемыеСимволы = Ложь, РазделительЕдинойСтрокой = Истина) Экспорт
 
@@ -775,9 +775,9 @@
 	Возврат Результат;
 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 14-03-2024 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 14-03-2024 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-06-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-06-2025 9:30 start
 Функция ОбнулитьКоличествоДнейЕслиНетПараметровДаты(ТекстЗапрос, ДополнительныеПараметры)
 	
 	КоличествоДнейНазад = ДополнительныеПараметры.КоличествоДнейНазад;
@@ -803,9 +803,9 @@
 	Возврат КоличествоДнейНазад;
 	
 КонецФункции	
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-06-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-06-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-06-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-06-2025 9:30 start
 Функция ВернутьЕстьДатаВПараметрахЗапроса(ПараметрыМакета)
 	
 	Для каждого СтрокаПараметра из ПараметрыМакета Цикл
@@ -822,9 +822,9 @@
 	
 	Возврат Ложь;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-06-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-06-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-06-2025 9:30 start									  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-06-2025 9:30 start									  
 Процедура ВыгрузитьДанныеВПриемник_Запрос_НаСервере(Запрос, Параметры, ПараметрыЗапроса)
 	
 	ПараметрыМакета = ПараметрыЗапроса.ПараметрыМакета;
@@ -903,17 +903,17 @@
 	КонецЕсли;	 
 	
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-06-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-06-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-09-2025 9:30 start
 Процедура ВыполнитьОжиданиеЦиклСекунд(ВремяОжидания)
 	ВремяОкончания = ТекущаяДата() + ВремяОжидания;
 	Пока ТекущаяДата() <= ВремяОкончания Цикл	
 	КонецЦикла;
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-09-2025 9:30 start
 Процедура ВыполнитьОжиданиеHTTPСекунд(ВремяОжидания)
 	Если ВремяОжидания <> 0 Тогда
         
@@ -932,39 +932,39 @@
         
     КонецЕсли;
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-12-2025 9:30 start											  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-12-2025 9:30 start											  
 Функция ДатаЧасВперед(_ДатаНачала, _Количество)
 	Возврат НачалоЧаса(_ДатаНачала) + 60 * 60 * _Количество; 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-12-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-12-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start											  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start											  
 Функция ДатаДнейВперед(_ДатаНачала, _Количество)
 	Возврат НачалоДня(_ДатаНачала) + 60 * 60 * 24 * _Количество; 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-12-2025 9:30 start											  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-12-2025 9:30 start											  
 Функция ДатаМесяцВперед(_ДатаНачала, _Количество)
 	Возврат ДобавитьМесяц(НачалоМесяца(_ДатаНачала), _Количество); 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-12-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-12-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start									
 Функция ДатаДнейНазад(_ДатаНачала, _Количество)
 	Возврат НачалоДня(_ДатаНачала) - 60 * 60 * 24 * _Количество; 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start										
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start										
 Функция РозностьВДнях(_ДатаОкончания, _ДатаНачала)
 	Возврат (НачалоДня(_ДатаОкончания) - НачалоДня(_ДатаНачала)) / (60 * 60 * 24); 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 30-05-2024 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 30-05-2024 19:30 start
 Функция ЕстьКолонкаВТЗ(ТЗ, ИмяКолонки)
 	Для каждого СтрокаК из ТЗ.Колонки Цикл
 		Если ВРег(СтрокаК.Имя) = ВРег(ИмяКолонки) Тогда
@@ -973,9 +973,9 @@
 	КонецЦикла;
 	Возврат Ложь;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 30-05-2024 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 30-05-2024 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-07-2025 9:30 start																						 
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-07-2025 9:30 start																						 
 Процедура ЗаписатьРезультатЗапросаЭкстракторНаСервере(Запрос, Параметры, ПараметрыЗапроса, ПериодДата,
 	ПоляНабораДанных = Неопределено, МассивПолей = Неопределено, ДополнительныеПараметры = Неопределено,
 	ВходнаяТЗ = Неопределено, МассивПолейЗапрос = Неопределено, ИндексацияТЗ = Неопределено,
@@ -1259,15 +1259,15 @@
 		КонецЕсли;
 	КонецЕсли;
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-07-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-07-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 start
 Функция ПолучитьТелоЗапросаClickHouseDB(_ТекстЗапроса, _ЗначенияЗапроса)
 	Возврат _ТекстЗапроса + " VALUES " + _ЗначенияЗапроса + ";";
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 start
 Функция ПолучитьТелоЗапросаPostgreSQL(_МассивПолей, _ТекстЗапроса, _ЗначенияЗапроса, _ПараметрыЗапроса, _МассивПолейЗначения)
 	СтрокаПоля = ПолучитьКлючИзМассива(_МассивПолей);
 	_ТекстЗапроса = _ТекстЗапроса + " ( " + СтрокаПоля + ")";
@@ -1284,9 +1284,9 @@
 		Возврат _ТекстЗапроса + " " + СтрокаПоляЗначения + " = " + СтрокаПоляЗначения_EXCLUDED + "";
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 start
 Функция ПолучитьТелоЗапросаMySQL(_МассивПолей, _ТекстЗапроса, _ЗначенияЗапроса, _МассивПолейЗначения)
 	СтрокаПоля = ПолучитьМассивЗначенийВСтрокуАпостроф(_МассивПолей);
 	//
@@ -1296,9 +1296,9 @@
 	СтрокаКолонкиДляUpdate = ПолучитьКолонкиДляUpdateMySQL(_МассивПолейЗначения);			
 	Возврат _ТекстЗапроса + " " + СтрокаКолонкиДляUpdate + ";";
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-07-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-07-2025 19:30 start
 Функция ВернутьДополнительныеПараметрыДляВложенногоФона(ДополнительныеПараметрыВходящие)
 	
 	ДополнительныеПараметрыВходящие.Вставить("ОднимФайлом", Истина);
@@ -1308,9 +1308,9 @@
 	
 	Возврат ДополнительныеПараметрыВходящие;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-07-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-07-2025 19:30 start
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-07-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-07-2025 19:30 start
 Функция СкопироватьСтруктуру(СтруктураВходящая)
 	НоваяСтруктура = Новый Структура;
 
@@ -1320,9 +1320,9 @@
 	
 	Возврат НоваяСтруктура;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-07-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-07-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 19:30 start
 Функция ВыполнитьЗапросPOST(_ТекстЗапроса, Параметры, ТаблицаЗначенийЗапроса = Неопределено, МассивПолей = Неопределено)
 	РезультатВыполненияЗапроса = Ложь;
 	
@@ -1342,9 +1342,9 @@
 	КонецЕсли;
 	Возврат РезультатВыполненияЗапроса;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 19:30 start
 Функция ВыполнитьРезультатВыполненияЗапросаПосле(Параметры)
 	РезультатВыполненияЗапроса = Ложь;
 	
@@ -1357,9 +1357,9 @@
 	КонецЕсли;
 	Возврат РезультатВыполненияЗапроса;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 28-03-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 28-03-2025 19:30 start
 Функция ВыполнитьРезультатВыполненияЗапросаПриОшибке(ЗначенияЗапроса, Параметры, ПараметрыЗапроса, ТЗ, ПериодДата, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница)
 	РезультатВыполненияЗапроса = Ложь;
 	
@@ -1370,9 +1370,9 @@
 	КонецЕсли;
 	Возврат РезультатВыполненияЗапроса;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 28-03-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 28-03-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 28-03-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 28-03-2025 19:30 start
 Функция ПолучитьМассивПолейЗначения(ПараметрыЗапроса)
 	МассивМ = Новый Массив;
 	
@@ -1385,9 +1385,9 @@
 	
 	Возврат МассивМ;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 28-03-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 28-03-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 15-04-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 15-04-2025 19:30 start
 Функция ВернутьСтрокуМассиваПоЛатинице(МассивП, ИмяЛатиница)
 	Счетчик = 0;
 	Для каждого СтрокаМ из МассивП Цикл
@@ -1402,9 +1402,9 @@
 	КонецЦикла;
 	Возврат МассивП.Найти(ВРег(ИмяЛатиница));
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 15-04-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 15-04-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 20-11-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 20-11-2025 19:30 start
 Функция ВернутьAlter(ТранслитСтрокаМ, КолонкаЗ, Параметры)
 	Если Параметры.ТипБазы = "ClickHouseDB" Тогда
 		Возврат "ALTER TABLE " + Параметры.ИмяБазы + "." + Параметры.ИмяТаблицыТранслит
@@ -1420,9 +1420,9 @@
 			+ " ADD COLUMN `" + ТранслитСтрокаМ + "` " + ПолучитьТипПоляНабора(КолонкаЗ, Параметры) + ";";
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 20-11-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 20-11-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 19:30 start
 Функция ВернутьИндекациюПоСКДОписаниеТаблицыБД(ВходящаяТЗ, ЗапросКолонки, Параметры, ДополнительныеПараметры)
 	РезультатТЗ = ВходящаяТЗ.СкопироватьКолонки();
 	Результат = Новый Структура("ИндексацияТЗ, ЕстьРазница", ВходящаяТЗ, Ложь);
@@ -1500,9 +1500,9 @@
 	Результат.Вставить("ИндексацияТЗ", РезультатТЗ);
 	Возврат Результат;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 14-08-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 14-08-2025 19:30 start
 Функция ВернутьИндексКолонкиСКДПоИмени(Колонки, ИмяКолонки)
 	Индекс = 0;
 	Для каждого СтрокаМ из Колонки Цикл
@@ -1513,9 +1513,9 @@
 	КонецЦикла;
 	Возврат -1;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 14-08-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 14-08-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-01-2023 18:00 start																						 
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-01-2023 18:00 start																						 
 Процедура ЗаписатьРезультатЗапросаЭкстракторФоновоеЗадание(ПараметрыЗапуска = Неопределено, ДополнительныеПараметры = Неопределено) Экспорт
 	
 	Запрос = ПараметрыЗапуска.Запрос;
@@ -1546,9 +1546,9 @@
 		ПроверятьТаблицуСоздаватьПоля);
 	
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-01-2023 18:00 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-01-2023 18:00 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-01-2023 18:00 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-01-2023 18:00 start
 Процедура ЗапуститьФоновоеЗаданиеЭкстрактор(Параметры, ПериодДата, МассивПолей = Неопределено, 
 	ДополнительныеПараметры = Неопределено, ВходнаяТЗ = Неопределено, МассивПолейЗапрос = Неопределено, 
 	ИндексацияТЗ = Неопределено, ЕстьРазница = Неопределено, ПроверятьТаблицуСоздаватьПоля = Истина)
@@ -1584,9 +1584,9 @@
 	//ДлительныеОперацииКлиент.ОжидатьЗавершение(СтруктураФоновогоЗадания, Новый ОписаниеОповещения("ОбработатьДанные", ЭтотОбъект), ПараметрыыОжидания);
         
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-01-2023 18:00 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-01-2023 18:00 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-01-2023 18:00 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-01-2023 18:00 start
 Функция ВыполнитьФоновоеЗаданиеНаСервере(ПараметрыЗапуска, УникальныйИдентификатор)
 	
 	СтрокаНаименование = "Фоновое задание длительной: Синхронизация1C_ClickHouse" + ПараметрыЗапуска.ИмяТаблицы + " " + ПараметрыЗапуска.СчетчикИтераций;
@@ -1615,17 +1615,17 @@
 	Возврат СтруктураФоновогоЗадания;
     
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 16-01-2023 18:00 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 16-01-2023 18:00 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 23-10-2024 18:00 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 23-10-2024 18:00 start
 Функция ЭкранированиеСпециальныхСимволов(Значение)
 	Значение = СтрЗаменить(Значение, "'", "\'");
 	Значение = СтрЗаменить(Значение, "\", "\\'"); //@metakaban
 	Возврат Значение;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 23-10-2024 18:00 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 23-10-2024 18:00 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-11-2023 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-11-2023 9:30 start
 Функция ВернутьЗначенияЗапрос(СтрокаР, Параметры, ПериодДата, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница)
 	СтрокаПустаяИлиКовычка = "'";
 	Счетчик = 0;
@@ -1734,9 +1734,9 @@
 	
 	Возврат ТекстЗапросаПоля;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-11-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 start
 Функция ПолучитьСтруктуруПолейИзМассива(МассивПолей)
 	СтруктураРезультат = Новый Структура;
 	Для каждого СтрокаМ из МассивПолей Цикл
@@ -1744,9 +1744,9 @@
 	КонецЦикла;
 	Возврат СтруктураРезультат;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 start
 Функция ВернутьЗначенияЗапросREST(СтрокаР, Параметры, ДополнительныеПараметры, ПериодДата, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница, ПараметрыЗапроса, МассивПолейЗначения, _ЗначенияЗапроса, ЭтоКонецВыборки = Ложь, ЕстьКолонкаПериодРегистратора = Ложь)
 	ЗначениеДляЗапроса = "";
 	СтруктураПолей = ПолучитьСтруктуруПолейИзМассива(МассивПолейЗапрос);
@@ -1795,9 +1795,9 @@
 		
 	Возврат ЗначениеДляЗапроса;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 start
 Функция ВернутьЗначенияЗапросREST_CSV(_СтруктураПолей, _СтруктураПолейЗапрос, _ЗначениеВКовычки = Истина)
 	ТекДата = ТекущаяДата();
 	СтрокаПустаяИлиКовычка = ?(_ЗначениеВКовычки,"'", "");
@@ -1883,9 +1883,9 @@
 	
 	Возврат ТекстЗапросаПоля;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 start
 Функция ВернутьЗначенияЗапросREST_JSON(_СтруктураПолей, _СтруктураПолейЗапрос, _ЗначениеВКовычки = Ложь)
 	ТекДата = ТекущаяДата();
 	СтрокаПустаяИлиКовычка = ?(_ЗначениеВКовычки,"'", "");
@@ -1965,9 +1965,9 @@
 	
 	Возврат ТекстЗапросаПоля;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-09-2025 9:30 start
 Функция ВернутьЗначенияЗапросREST_JSON_МассивЗначенийПолейВСтроку(_СтруктураПолей, _СтруктураПолейЗапрос, _ЗначениеВКовычки = Истина)
 	ТекДата = ТекущаяДата();
 	СтрокаПустаяИлиКовычка = ?(_ЗначениеВКовычки,"'", "");
@@ -2053,9 +2053,9 @@
 	МассивЗначенийПолейВСтроку = МассивЗначенийПолейВСтроку + "]";
 	Возврат МассивЗначенийПолейВСтроку;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 start
 Функция ПолучитьСтрокуЧерезРазделительИзСтруктуры(_Структура, _СтрокаРазделитель = ",") Экспорт
 	КоличествоПолей = _Структура.Количество();
 	ИндексПоля = 0;
@@ -2071,9 +2071,9 @@
 	
 	Возврат РезультатСтрока;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 start
 Функция ПолучитьТелоJSONИзСтруктуры(_Структура, ПараметрыJSON = Неопределено, УбиратьСлешКовычку = Ложь) Экспорт
 	ЗаписьJSON = Новый ЗаписьJSON;
 	Если ПараметрыJSON <> Неопределено Тогда
@@ -2089,9 +2089,9 @@
 	КонецЕсли;
 	Возврат ТелоJSON;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 start
 Функция ВставитьЗаписьВБД(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных = Неопределено, МассивПолей = Неопределено, МассивПолейЗапрос = Неопределено, ИндексацияТЗ = Неопределено, ЕстьРазница = Неопределено)
 	Если Параметры.ТипБазы = "ClickHouseDB" Тогда
 		ВставитьЗаписьВClickHouseDB_ПериодСхемаКомпоновкиДанных(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница);
@@ -2108,33 +2108,33 @@
 	Иначе
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 01-11-2023 9:30 start
 Процедура ВставитьЗаписьВClickHouseDB_ПериодСхемаКомпоновкиДанных(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница)
 	ТекстДляЗапроса = ВернутьТекстЗапроса(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница);
 	РезультатВыполненияЗапроса = ВыполнитьЗапросPOST_ClickHouseDB(ТекстДляЗапроса, Параметры);
 	Ошибка = "";
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 01-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 9:30 start
 Процедура ВставитьЗаписьВREST_ПериодСхемаКомпоновкиДанных(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница)
 	ТекстДляЗапроса = ВернутьТекстЗапроса(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница);
 	РезультатВыполненияЗапроса = ВыполнитьЗапросPOST_REST(ТекстДляЗапроса, Параметры);
 	Ошибка = "";
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 9:30 start
 Процедура ВставитьЗаписьВLocal_ПериодСхемаКомпоновкиДанных(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница)
 	ТекстДляЗапроса = ВернутьТекстЗапроса(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница);
 	//РезультатВыполненияЗапроса = ВыполнитьЗапросPOST_REST(ТекстДляЗапроса, Параметры);
 	Ошибка = "";
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-09-2025 9:30 start
 Процедура ВставитьЗаписьВGoogleSheets_ПериодСхемаКомпоновкиДанных(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница)
 	МассивСтрокЗначений = Новый Массив;
 	МассивСтрокЗначений.Добавить(
@@ -2144,25 +2144,25 @@
 	РезультатВыполненияЗапроса = ВыполнитьЗапросPOST("", Параметры, МассивСтрокЗначений, МассивПолей);
 	Ошибка = "";
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 start
 Процедура ВставитьЗаписьВPostgreSQL_ПериодСхемаКомпоновкиДанных(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница)
 	ТекстДляЗапроса = ВернутьТекстЗапроса(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница);
 	РезультатВыполненияЗапроса = ВыполнитьЗапросPOST_PostgreSQL(ТекстДляЗапроса, Параметры);
 	Ошибка = "";
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 11-04-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 11-04-2025 9:30 start
 Процедура ВставитьЗаписьВMySQL_ПериодСхемаКомпоновкиДанных(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница)
 	ТекстДляЗапроса = ВернутьТекстЗапроса(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница);
 	РезультатВыполненияЗапроса = ВыполнитьЗапросPOST_MySQL(ТекстДляЗапроса, Параметры);
 	Ошибка = "";
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 11-04-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 11-04-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 01-11-2023 9:30 start
 Функция ВернутьТекстЗапроса(СтрокаР, Параметры, ПериодДата, ПоляНабораДанных, МассивПолей, МассивПолейЗапрос, ИндексацияТЗ, ЕстьРазница)
 	Если Параметры.ТипБазы = "ClickHouseDB" Тогда
 		_ТекстЗапроса = "INSERT INTO " + Параметры.ИмяБазы +"." + Параметры.ИмяТаблицыТранслит + " (*)";
@@ -2179,9 +2179,9 @@
 	ТекстДляЗапроса = _ТекстЗапроса + " " + ТекстЗапросаПоля + ";";
 	Возврат ТекстДляЗапроса;	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end																				  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 01-11-2023 9:30 end																				  
 						
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 9:30 start										   
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 9:30 start										   
 Функция ПолучитьДатуВремяISO8601(ПараметрДата, ДобавитьКовычку = Истина, РазделительДатыИВремя = " ") 
 	
 	ПериодДень = День(ПараметрДата);
@@ -2193,9 +2193,9 @@
 	
 	Возврат ?(ДобавитьКовычку,"'","") + ВернутьЧислоБезПробелов(ПериодГод, Истина) + "-" + ВернутьЧислоБезПробеловСНулями(ПериодМесяц) + "-" + ВернутьЧислоБезПробеловСНулями(ПериодДень) + РазделительДатыИВремя + ВернутьЧислоБезПробеловСНулями(ПериодЧас) + ":" + ВернутьЧислоБезПробеловСНулями(ПериодМинута) + ":" + ВернутьЧислоБезПробеловСНулями(ПериодСекунда) + ?(ДобавитьКовычку,"'",""); 
 КонецФункции 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 9:30 start										   
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 9:30 start										   
 Функция ПолучитьДатуISO8601(ПараметрДата, ДобавитьКовычку = Истина) 
 	
 	ПериодДень = День(ПараметрДата);
@@ -2207,15 +2207,15 @@
 	
 	Возврат ?(ДобавитьКовычку,"'","") + ВернутьЧислоБезПробелов(ПериодГод, Истина) + "-" + ВернутьЧислоБезПробеловСНулями(ПериодМесяц) + "-" + ВернутьЧислоБезПробеловСНулями(ПериодДень) + ?(ДобавитьКовычку,"'",""); 
 КонецФункции 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start																					   
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start																					   
 Функция ПолучитьUnixTS(ПараметрДата) 
 	Возврат ВернутьЧислоБезПробелов(УниверсальноеВремя(ПараметрДата) - '19700101'); 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start																						
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start																						
 Функция ВернутьЧислоБезПробелов(ЧислоИзСтроки = 0, ЭтоГод = Ложь, ЧРД = ".")
 	Если ЭтоГод Тогда
 		СтрокаЧисло = Формат(ЧислоИзСтроки, "ЧЦ=4; ЧН=0000; ЧВН=; ЧГ=0");
@@ -2230,15 +2230,15 @@
 
 	Возврат СтрокаЧисло; 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start
 Функция ВернутьЧислоБезПробеловСНулями(ЧислоИзСтроки)
 	Возврат Формат(ЧислоИзСтроки, "ЧЦ=2; ЧН=00; ЧВН=; ЧГ=0");
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 01-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start	  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 01-11-2023 9:30 start	  
 Функция НайтиПолейВМассиве(МассивП, Поле)
 	Для каждого СтрокаМ из МассивП Цикл
 		Если СтрокаМ = Поле Тогда
@@ -2247,9 +2247,9 @@
 	КонецЦикла;
 	Возврат Ложь;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 01-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 14-08-2025 9:30 start	  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 14-08-2025 9:30 start	  
 Функция НайтиИндексПоляВМассиве(МассивП, Поле)
 	Индекс = 0;
 	Для каждого СтрокаМ из МассивП Цикл
@@ -2260,9 +2260,9 @@
 	КонецЦикла;
 	Возврат -1;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 14-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 14-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start	 
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 01-11-2023 9:30 start	 
 Функция ВернутьМассивПорядокПериодИзРезультатаЗапроса(РезультатЗапроса, ДополнительныеПараметры, ИмяПоля = "Поле")
 	М = Новый Массив;
 	Если ДополнительныеПараметры.ТипБазы = "MySQL" Тогда
@@ -2277,9 +2277,9 @@
 	КонецЦикла;
 	Возврат М;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 01-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-07-2025 9:30 start	 
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-07-2025 9:30 start	 
 Функция ВернутьМассивПорядокПериодИзКолонокЗапроса(ЗапросКолонки, ДополнительныеПараметры)
 	М = Новый Массив;
 	Если ДополнительныеПараметры.ТипБазы = "MySQL" Тогда
@@ -2294,9 +2294,9 @@
 	КонецЦикла;
 	Возврат М;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-07-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-07-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 01-11-2023 9:30 start																					   
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 01-11-2023 9:30 start																					   
 Функция ВернутьМассивПорядокИзРезультатаЗапроса(РезультатЗапроса)
 	М = Новый Массив;
 	Для каждого Колонка из РезультатЗапроса.Колонки Цикл
@@ -2304,9 +2304,9 @@
 	КонецЦикла;
 	Возврат М;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 03-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 03-11-2023 9:30 start
 Функция ВернутьМассивПорядокПериодИзНабораДанных(ПоляНабораДанных, ДополнительныеПараметры, ИмяПоля = "Поле")
 	М = Новый Массив;
 	Если ДополнительныеПараметры.ТипБазы = "MySQL" Тогда
@@ -2321,9 +2321,9 @@
 	КонецЦикла;
 	Возврат М;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 03-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start			 
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 03-11-2023 9:30 start			 
 Функция ВернутьМассивПолейКлючейПериодИзНабораДанных(ПоляНабораДанных, ДополнительныеПараметры, ИмяПоля = "Поле")
 	М = Новый Массив;
 	МассивДополнительныеКлючи = Новый Массив;
@@ -2356,10 +2356,10 @@
 					//ДобавитьПоле = Истина;
 				ИначеЕсли Строка(ПолеНабора.ТипЗначения) = "Строка" Тогда
 					//ДобавитьПоле = Истина;
-				//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 07-06-2024 9:30 start
+				//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 07-06-2024 9:30 start
 				ИначеЕсли Строка(ПолеНабора.ТипЗначения) = "Булево" Тогда
 					//ДобавитьПоле = Истина;
-				//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 07-06-2024 9:30 end
+				//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 07-06-2024 9:30 end
 				Иначе
 					ДобавитьПоле = Истина;
 				КонецЕсли;
@@ -2374,9 +2374,9 @@
 	КонецЦикла;
 	Возврат М;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 03-11-2023 9:30 start
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-05-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-05-2025 9:30 start
 Функция ЭтоЗначениеЕстьВМассиве(МассивМ, ПолеПоиска)
 	Индекс = МассивМ.Найти(ПолеПоиска);
 	Если Индекс <> Неопределено Тогда
@@ -2384,9 +2384,9 @@
 	КонецЕсли;
 	Возврат Ложь;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-05-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-05-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 07-07-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 07-07-2025 9:30 start
 Функция ПолучитьМассивДополнительныхКлючей() Экспорт
 	МассивМ = Новый Массив;
 	//
@@ -2404,9 +2404,9 @@
 	//
 	Возврат МассивМ;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 07-07-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 07-07-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 03-11-2023 9:30 start
 Функция ВернутьМассивПорядокИзНабораДанных(ПоляНабораДанных)
 	М = Новый Массив;
 	Для каждого Поле из ПоляНабораДанных Цикл
@@ -2414,9 +2414,9 @@
 	КонецЦикла;
 	Возврат М;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 03-11-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 03-11-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 18-08-2024 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 18-08-2024 9:30 start
 Функция ПолучитьHTTPСоединение(Параметры)
 	
 	Если Параметры.ЭтоЗащищенноеСоединение Тогда
@@ -2439,7 +2439,7 @@
 	КонецЕсли;	
 	Возврат Соединение; 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 18-08-2024 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 18-08-2024 9:30 end
 
 Функция СтруктураURI(СтрокаURI) Экспорт
 	
@@ -2502,7 +2502,7 @@
 	
 КонецФункции
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start																					
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start																					
 Функция ЕстьБазаВClickHouse(ИмяБазы, Параметры)
 	Запрос = "SELECT name, comment FROM system.databases WHERE name = '" + Параметры.ИмяБазы + "';";
 	//
@@ -2519,9 +2519,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 start																					
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 start																					
 Функция ЕстьБазаВPostgreSQL(ИмяБазы, Параметры)
 	ТекстЗапрос = "SELECT 1 FROM pg_database WHERE datname = '" + Параметры.ИмяБазы + "';";
 	//
@@ -2533,9 +2533,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 start																					
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 start																					
 Функция ЕстьБазаВ(ИмяБазы, Параметры)
 	Если Параметры.ТипБазы = "ClickHouseDB" Тогда
 		Возврат ЕстьБазаВClickHouse(ИмяБазы, Параметры);
@@ -2545,9 +2545,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 end
 																				  
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 start 
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 start 
 Функция ТекстЗапросаСозданиеБазыДанных(Параметры)
 	_ТекстЗапроса = "";
 	Если Параметры.ТипБазы = "ClickHouseDB" Тогда
@@ -2561,9 +2561,9 @@
 	КонецЕсли;
 	Возврат _ТекстЗапроса;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 9:30 start									   
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 9:30 start									   
 Функция ТекстЗапросаСозданиеТаблицыПериодСхемаКомпоновкиДанных(Параметры, ПараметрыМакета, ПоляМакета, ПоляКлючи, ДополнительныеПараметры, ИмяПоляМ = "Поле")
 	_ТекстЗапроса = "";
 	
@@ -2579,9 +2579,9 @@
 	
 	Возврат _ТекстЗапроса;	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 start
 Функция ТекстЗапросаСозданиеТаблицыПериодСхемаКомпоновкиДанныхClickHouseDB(Параметры, ПараметрыМакета, ПоляМакета, ПоляКлючи, ДополнительныеПараметры, ИмяПоляМ)
 	_ТекстЗапроса = "CREATE TABLE " + Параметры.ИмяБазы +"." + Параметры.ИмяТаблицыТранслит + "";
 	Если ДополнительныеПараметры.ИспользоватьПериодВКлюче Тогда
@@ -2607,9 +2607,9 @@
 	
 	Возврат _ТекстЗапроса;	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 start
 Функция ТекстЗапросаСозданиеТаблицыПериодСхемаКомпоновкиДанныхPostgreSQL(Параметры, ПараметрыМакета, ПоляМакета, ПоляКлючи, ДополнительныеПараметры, ИмяПоляМ)
 	_ТекстЗапроса = "CREATE TABLE " + Параметры.ИмяТаблицыТранслит + "";
 	Если ДополнительныеПараметры.ИспользоватьПериодВКлюче Тогда
@@ -2632,9 +2632,9 @@
 	
 	Возврат _ТекстЗапроса;	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 9:30 start
 Функция ТекстЗапросаСозданиеТаблицыПериодСхемаКомпоновкиДанныхMySQL(Параметры, ПараметрыМакета, ПоляМакета, ПоляКлючи, ДополнительныеПараметры, ИмяПоляМ)
 	_ТекстЗапроса = "CREATE TABLE `" + Параметры.ИмяТаблицыТранслит + "`";
 	Счетчик = 1;
@@ -2654,9 +2654,9 @@
 	
 	Возврат _ТекстЗапроса;	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 9:30 start								  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 9:30 start								  
 Функция ПолучитьКлючИзМассива(МассивЗначений, Префикс = "", ДлинаИндексаБайт = 0, ДлинаЗначенияДляИндекса = 0)
 	СтрокаМассив = Префикс + ПолучитьЗначениеИндексаСДлинойБайт(МассивЗначений[0], ДлинаЗначенияДляИндекса);
 	Количество = МассивЗначений.Количество();
@@ -2679,17 +2679,17 @@
 	КонецЦикла;
 	Возврат СтрокаМассив;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 9:30 end
 
-////<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 15-04-2025 9:30 start								  
+////<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 15-04-2025 9:30 start								  
 Функция ПолучитьСтрокуАпостроф(СтрокаЗначение)
 	СтрокаЗначение = "`" + СтрокаЗначение + "`";
 	
 	Возврат СтрокаЗначение;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 15-04-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 15-04-2025 9:30 end
 //
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 15-04-2025 9:30 start								  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 15-04-2025 9:30 start								  
 Функция ПолучитьМассивЗначенийВСтрокуАпостроф(МассивЗначений, ДелатьТранслит = Истина, ДелатьАпостроф = Истина)
 	СтрокаМассив = "";
 	Если ДелатьАпостроф Тогда
@@ -2712,9 +2712,9 @@
 	КонецЦикла;
 	Возврат СтрокаМассив;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 15-04-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 15-04-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 11-04-2025 9:30 start								  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 11-04-2025 9:30 start								  
 Функция ПолучитьКолонкиДляUpdateMySQL(МассивЗначений)
 	СтрокаКолонки = "" + УстановитьЗначениеСУчетомДатаОбновленияЗаписиДляUpdateMySQL(МассивЗначений[0], МассивЗначений[0]);
 	Счетчик = 1;
@@ -2727,9 +2727,9 @@
 	
 	Возврат СтрокаКолонки;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 11-04-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 11-04-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 11-04-2025 9:30 start								  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 11-04-2025 9:30 start								  
 Функция УстановитьЗначениеСУчетомДатаОбновленияЗаписиДляUpdateMySQL(ИмяКолонки, ЗначениеМ)
 	
 	Если ИмяКолонки = "ДатаОбновленияЗаписи" Тогда
@@ -2741,15 +2741,15 @@
 	
 	Возврат ЗначениеМ;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 11-04-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 11-04-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 9:30 start
 Функция ПолучитьДополненныйКлючМ(КлючМ, Префикс, КлючС, ДлинаЗначенияДляИндекса)
 	Возврат КлючМ + "," + Префикс + ПолучитьЗначениеИндексаСДлинойБайт(КлючС, ДлинаЗначенияДляИндекса);
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 11-04-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 11-04-2025 9:30 start
 Функция ПолучитьЗначениеИндексаСДлинойБайт(КлючС, ДлинаЗначенияДляИндекса)
 	Если ПоискДатыПоТекстуСтроки(КлючС) Тогда
 		Возврат Транслит(КлючС);
@@ -2761,9 +2761,9 @@
 		КонецЕсли;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 11-04-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 11-04-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 11-04-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 11-04-2025 9:30 start
 Функция ПоискДатыПоТекстуСтроки(СтрокаДата)
 	Если СтрНайти(СтрокаДата, "Период") > 0 Тогда
 		Возврат Истина;
@@ -2773,9 +2773,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 11-04-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 11-04-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-07-2025 9:30 start								  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-07-2025 9:30 start								  
 Функция ПолучитьТипПоляНабора(ПолеНабора, Параметры)
 	Если Параметры.ТипБазы = "ClickHouseDB" Тогда
 		Возврат ПолучитьТипПоляНабораClickHouseDB(ПолеНабора);
@@ -2787,9 +2787,9 @@
 		Возврат ПолучитьТипПоляНабораClickHouseDB(ПолеНабора);
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-07-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-07-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-07-2025 9:30 start								  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-07-2025 9:30 start								  
 Функция ПолучитьТипПоляНабораPostgreSQL(ПолеНабора)
 	
 	Если ТипЗнч(ПолеНабора.ТипЗначения) = Тип("ОписаниеТипов") Тогда
@@ -2810,9 +2810,9 @@
 	Возврат "character varying(255) DEFAULT ' '::character varying";
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-07-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-07-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-07-2025 9:30 start								  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-07-2025 9:30 start								  
 Функция ПолучитьТипПоляНабораMySQL(ПолеНабора)
 	
 	Если ТипЗнч(ПолеНабора.ТипЗначения) = Тип("ОписаниеТипов") Тогда
@@ -2833,9 +2833,9 @@
 	Возврат "varchar(255)";
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-07-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-07-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-07-2025 9:30 start								  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-07-2025 9:30 start								  
 Функция ПолучитьТипПоляНабораClickHouseDB(ПолеНабора)
 	
 	Если ТипЗнч(ПолеНабора.ТипЗначения) = Тип("ОписаниеТипов") Тогда
@@ -2856,9 +2856,9 @@
 	Возврат "String";
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-07-2025 9:30 end																				  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-07-2025 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-07-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-07-2025 9:30 start
 Функция ВернутьСтрокаПолеНабораТипЗначения(ПолеНабораТипЗначения)
 	СтрокаРезультат = Строка(ПолеНабораТипЗначения);
 	
@@ -2869,9 +2869,9 @@
 	
 	Возврат СтрокаРезультат;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-07-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-07-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start									
 Функция ВыполнитьЗапросPOST_ClickHouseDB(_ТекстЗапроса, Параметры)
 	Запрос = _ТекстЗапроса;
 	//
@@ -2894,9 +2894,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 9:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 9:30 start									
 Функция ВыполнитьЗапросPOST_REST(_ТекстЗапроса, Параметры)
 	Запрос = _ТекстЗапроса;
 	//
@@ -2963,9 +2963,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 9:30 start
 Функция ПолучитьРасширениеФайлаИзПараметровЗапроса(Параметры)
 	Если Параметры.ФорматДанных = "CSV_WH" Тогда
 		Возврат ".csv";
@@ -2983,9 +2983,9 @@
 		Возврат ".txt";
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 9:30 start
 Функция ВернутьТаблицуЗначенийИзCSV(ПутьКФайлу, ИндексШапки = 0, Разделитель = ",")
 	ПрочитанныйФайл = Новый ТекстовыйДокумент;
     ПрочитанныйФайл.Прочитать(ПутьКФайлу);
@@ -3013,9 +3013,9 @@
     КонецЦикла;
     Возврат ДанныеИзФайла;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 9:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 9:30 start									
 Функция ВыполнитьЗапросPOST_Local(_ТекстЗапроса, Параметры, ТаблицаЗначенийЗапроса = Неопределено)
 	Запрос = _ТекстЗапроса;
 	//
@@ -3058,17 +3058,17 @@
 	//
 	Возврат Истина;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 start
 Функция НотацияА1(НомерСтроки, НомерСтолбца)
 	//A=65, Z=90, 26 символов на одну букву
 	НомерСтолбца = Мин(НомерСтолбца, 26);
 	Возврат (Символ(64+НомерСтолбца)+Формат(НомерСтроки,"ЧГ=0"));	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 start
 Функция ПолучитьТокен_GoogleSheets(Параметры)
 	//sheets.googleapis.com
 	//
@@ -3216,9 +3216,9 @@
 		Возврат Неопределено;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-09-2025 9:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-09-2025 9:30 start									
 Функция ОчиститьЛист_GoogleSheets(Параметры)
 	СтруктураURI = СтруктураURI(Параметры.Адрес);
 	Параметры.Вставить("Адрес", СтруктураURI.Хост);
@@ -3232,9 +3232,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-09-2025 9:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-09-2025 9:30 start									
 Функция СоздатьНовыйЛист_GoogleSheets(Параметры)
 	СтруктураURI = СтруктураURI(Параметры.Адрес);
 	Параметры.Вставить("Адрес", СтруктураURI.Хост);
@@ -3282,9 +3282,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-09-2025 9:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-09-2025 9:30 start									
 Функция ВыполнитьЗапросPOST_GoogleSheets(_ТекстЗапроса, Параметры, ТаблицаЗначенийЗапроса = Неопределено, МассивПолей)
 	МассивЗаписей = Новый Массив;
 	//
@@ -3352,9 +3352,9 @@
 	//
 	Возврат Истина;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 start
 Функция ВыполнитьЗапросGET_GoogleSheets(_СтруктураURI, Параметры, ПараметрыURI)
 	Соединение = ПолучитьHTTPСоединение(Параметры);
 	Заголовки = Новый Соответствие;
@@ -3387,9 +3387,9 @@
 		Возврат 0;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 start
 Функция Base64Url(ДвоичныеДанные)
 	
 	СтрокаBase64 = Base64Строка(ДвоичныеДанные);
@@ -3408,9 +3408,9 @@
 	Возврат СтрокаBase64;
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 start
 Процедура ПарсХекс(Родитель, ХексСтрокаКлюча, СтрокаOCTET_STRING)
 	Тэги = Новый Соответствие;
 	Тэги.Вставить("30","SEQUENCE");
@@ -3467,9 +3467,9 @@
 	КонецЦикла;
 	
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 start
 Функция ПолучиьПодписьSHA256RSA(ХешДвоичный, ПараметрыСертификатаСтруктура)
 		
 	ХешХексСтрока = ПолучитьHexСтрокуИзДвоичныхДанных(ХешДвоичный);
@@ -3511,9 +3511,9 @@
 	Возврат ДвоичныеИзЧисла(s)
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 start
 Функция ДвоичныеИзЧисла(знач _Число)
 	МассивЧиселБайт = Новый Массив;
 	Пока _Число > 0 Цикл
@@ -3530,9 +3530,9 @@
 	Возврат ПолучитьДвоичныеДанныеИзБуфераДвоичныхДанных(Буфер);
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 start
 Функция ВозведениеВСтепеньПоМодулю0(Основание, Степень, Модуль)
 	Остаток = 1;
 	Для Индекс = 1 по Степень Цикл
@@ -3540,9 +3540,9 @@
 	КонецЦикла;
 	Возврат Остаток;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 start
 Функция ВозведениеВСтепеньПоМодулю(Основание, Степень, Модуль)
 	
 	// Двоичное представление степени переведем в массив нулей и единиц в обратном порядке
@@ -3573,9 +3573,9 @@
 	Возврат Произведение%Модуль;
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-09-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-09-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 start
 Процедура СохранитьТаблицуЗначенийВExcel(_ТаблицаЗначений, _ПутьДоФайла, _ТипФайла)
 	ТипФайлаТабличногоДокументаExcel = ТипФайлаТабличногоДокумента.XLS;
 	Если _ТипФайла = "XLSX" Тогда
@@ -3622,9 +3622,9 @@
 	//                  
 	_ТабличныйДокумент.Записать(_ПутьДоФайла, ТипФайлаТабличногоДокументаExcel);
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 start									
 Функция ВыполнитьЗапросPOST_PostgreSQL(_ТекстЗапроса, Параметры)
 	Запрос = _ТекстЗапроса;
 	//
@@ -3636,9 +3636,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 9:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 9:30 start									
 Функция ВыполнитьЗапросPOST_MySQL(_ТекстЗапроса, Параметры)
 	Запрос = _ТекстЗапроса;
 	//
@@ -3650,9 +3650,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 18:30 start									
 Функция ВыполнитьЗапросGET_REST(_ТекстЗапроса, Параметры)
 	Соединение = ПолучитьHTTPСоединение(Параметры);
 	HTTPЗапрос = Новый HTTPЗапрос("?query="+_ТекстЗапроса);
@@ -3660,9 +3660,9 @@
 	ТекстОтвета = Результат.ПолучитьТелоКакСтроку();
 	Возврат ТекстОтвета; 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 14-03-2024 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 14-03-2024 18:30 start									
 Функция ВыполнитьЗапросGET_ClickHouseDB(_ТекстЗапроса, Параметры)
 	Соединение = ПолучитьHTTPСоединение(Параметры);
 	HTTPЗапрос = Новый HTTPЗапрос("?query="+_ТекстЗапроса);
@@ -3670,25 +3670,25 @@
 	ТекстОтвета = Результат.ПолучитьТелоКакСтроку();
 	Возврат ТекстОтвета; 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 14-03-2024 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 14-03-2024 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 start									
 Функция ВыполнитьЗапросGET_PostgreSQL(_ТекстЗапроса, Параметры, Тип)
 	ДанныеРезультат = КомандаВыполнитьPostgreSQL(_ТекстЗапроса, Параметры, Тип);
 	//
 	Возврат ДанныеРезультат; 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 start									
 Функция ВыполнитьЗапросGET_MySQL(_ТекстЗапроса, Параметры, Тип)
 	ДанныеРезультат = КомандаВыполнитьMySQL(_ТекстЗапроса, Параметры, Тип);
 	//
 	Возврат ДанныеРезультат; 
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 start
 Функция КомандаВыполнитьPostgreSQL(_ТекстЗапроса, Параметры, Тип)
 	ИмяФункции = "ВыполнитьPostgreSQL";
 	АбсолютныйПутьСкрипта = СохранитьСкриптPythonНаСервере(ИмяФункции);
@@ -3708,9 +3708,9 @@
 		Возврат Неопределено;
 	КонецЕсли;
 КонецФункции	
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 18:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 18:30 start
 Функция КомандаВыполнитьMySQL(_ТекстЗапроса, Параметры, Тип)
 	ИмяФункции = "ВыполнитьMySQL";
 	АбсолютныйПутьСкрипта = СохранитьСкриптPythonНаСервере(ИмяФункции);
@@ -3730,9 +3730,9 @@
 		Возврат Неопределено;
 	КонецЕсли;
 КонецФункции	
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 start
 //@skip-check module-accessibility-at-client
 Функция ЗапуститьПриложениеPythonНаСервере(ИмяФункции, ПараметрыЗапуска = "", АбсолютныйПутьPython)
 	
@@ -3747,9 +3747,9 @@
 	Возврат КодВозврата;
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 start
 Функция СформироватьПараметрыЗапуска_ВыполнитьPostgreSQL(_ТекстЗапроса, Параметры, Тип)
 	
 	КаталогВременныхФайлов = КаталогВременныхФайлов();
@@ -3773,9 +3773,9 @@
 	Возврат ПараметрыЗапуска;
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 18:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 18:30 start
 Функция СформироватьПараметрыЗапуска_ВыполнитьMySQL(_ТекстЗапроса, Параметры, Тип)
 	
 	КаталогВременныхФайлов = КаталогВременныхФайлов();
@@ -3798,9 +3798,9 @@
 	Возврат ПараметрыЗапуска;
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 start
 Процедура СохранитьТекстВТекстовыйФайл(Текст, АбсолютныйПуть)
 	
 	Кодировка = КодировкаТекста.UTF8;
@@ -3809,9 +3809,9 @@
 	ТекстовыйФайлЗапись.Закрыть();
 		
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 start
 Процедура СохранитьТаблицуЗначенийВCSV(ТаблицаЗначений, АбсолютныйПуть, Колонки, ПераметрыФорматирования=Неопределено)
 	
 	Разделитель = ";";
@@ -3845,9 +3845,9 @@
 	ТекстовыйФайлЗапись.Закрыть();
 	
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 start
 Функция СохранитьСкриптPythonНаСервере(ИмяФункции)
 	
 	// Сохранение скрипта в файл
@@ -3858,17 +3858,17 @@
 	Возврат АбсолютныйПуть;
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 start
 Функция ПолучитьМакетСкрипта(ИмяМакета)
 	
 	Возврат ЭтотОбъект.ПолучитьМакет(ИмяМакета);
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 start									
 Функция ЕстьТаблицаВ(ИмяТаблицы, Параметры)
 	
 	РезультатВыполненияЗапроса = Ложь;
@@ -3889,9 +3889,9 @@
 	Возврат РезультатВыполненияЗапроса;
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 14-03-2024 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 14-03-2024 18:30 start									
 Функция ЕстьТаблицаВClickHouseDB(ИмяТаблицы, Параметры)
 	_ТекстЗапроса = "SELECT * FROM " + Параметры.ИмяБазы +"." + Параметры.ИмяТаблицыТранслит + " LIMIT 1;";
 	//
@@ -3908,9 +3908,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 14-03-2024 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 14-03-2024 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 18:30 start									
 Функция ЕстьТаблицаВREST(ИмяТаблицы, Параметры)
 	_ТекстЗапроса = "SELECT * FROM " + Параметры.ИмяБазы +"." + Параметры.ИмяТаблицыТранслит + " LIMIT 1;";
 	//
@@ -3928,9 +3928,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 18:30 start									
 Функция ЕстьТаблицаВGoogleSheets(ИмяТаблицы, Параметры)
 	СтруктураURI = СтруктураURI(Параметры.Адрес);
 	Параметры.Вставить("Адрес", СтруктураURI.Хост);
@@ -3942,9 +3942,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 start									
 Функция ЕстьТаблицаВPostgreSQL(ИмяТаблицы, Параметры)
 	_ТекстЗапроса = "SELECT * FROM " + Параметры.ИмяТаблицыТранслит + " LIMIT 1;";
 	//
@@ -3956,9 +3956,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 18:30 start									
 Функция ЕстьТаблицаВMySQL(ИмяТаблицы, Параметры)
 	_ТекстЗапроса = "DESCRIBE " + Параметры.ИмяБазы +"." + Параметры.ИмяТаблицыТранслит + ";";
 	//
@@ -3970,9 +3970,9 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 start									
 Функция ОписаниеТаблицыВ(ИмяТаблицы, Параметры)
 	
 	Если Параметры.ТипБазы = "ClickHouseDB" Тогда
@@ -3986,9 +3986,9 @@
 	Иначе
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-03-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-03-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 18:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 18:30 start
 Функция ПолучитьСтруктуруJSON(ТекстJSON)
 	ЧтениеJSON = Новый ЧтениеJSON;
 	ЧтениеJSON.УстановитьСтроку(ТекстJSON);
@@ -3996,9 +3996,9 @@
 	ЧтениеJSON.Закрыть();
 	Возврат Результат;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-03-2025 18:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-03-2025 18:30 start
 Функция ПолучитьСтруктуруТЗДляОписаниеТаблицы()
 	ТЗ = Новый ТаблицаЗначений();
 	ТЗ.Колонки.Добавить("Имя", Новый ОписаниеТипов("Строка"));
@@ -4010,9 +4010,9 @@
 	
 	Возврат ТЗ;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-03-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-03-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 14-03-2024 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 14-03-2024 18:30 start									
 Функция ОписаниеТаблицыВClickHouseDB(ИмяТаблицы, Параметры)
 	_ТекстЗапроса = "DESCRIBE TABLE " + Параметры.ИмяБазы +"." + Параметры.ИмяТаблицыТранслит;
 	//
@@ -4031,9 +4031,9 @@
 	КонецЦикла;
 	Возврат ТЗ;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 14-03-2024 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 14-03-2024 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 18:30 start									
 Функция ОписаниеТаблицыВREST(МассивСтрок, ИмяТаблицы = "", Параметры = Неопределено)
 	ТЗ = ПолучитьСтруктуруТЗДляОписаниеТаблицы();
 	Для каждого СтрокаМ из МассивСтрок Цикл
@@ -4048,9 +4048,9 @@
 	КонецЦикла;
 	Возврат ТЗ;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 18:30 start									
 Функция ОписаниеТаблицыВPostgreSQL(ИмяТаблицы, Параметры)
 																																				   
 	_ТекстЗапроса = "SELECT * FROM information_schema.columns WHERE table_schema = 'public' AND table_name = '" + Параметры.ИмяТаблицыТранслит + "'";
@@ -4079,9 +4079,9 @@
 	КонецЦикла;
 	Возврат ТЗ;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 18:30 start									
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 18:30 start									
 Функция ОписаниеТаблицыВMySQL(ИмяТаблицы, Параметры)
 																																				   
 	_ТекстЗапроса = "DESCRIBE " + Параметры.ИмяБазы +"." + Параметры.ИмяТаблицыТранслит + ";";
@@ -4110,9 +4110,9 @@
 	КонецЦикла;
 	Возврат ТЗ;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 18:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 18:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 9:30 start										
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 9:30 start										
 Функция ЭтоОшибкаЗапросаREST(ТекстОтвета)
 	Если СтрНайти(ВРег(ТекстОтвета), "CODE: 32") Тогда
 		Возврат Истина;
@@ -4131,9 +4131,9 @@
 	КонецЕсли;
 	Возврат Ложь;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 09-06-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 09-06-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start										
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start										
 Функция ЭтоОшибкаЗапросаClickHouseDB(ТекстОтвета)
 	Если СтрНайти(ВРег(ТекстОтвета), "CODE: 32") Тогда
 		Возврат Истина;
@@ -4152,9 +4152,9 @@
 	КонецЕсли;
 	Возврат Ложь;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 28-03-2025 9:30 start										
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 28-03-2025 9:30 start										
 Функция ЭтоОшибкаЗапросаPostgreSQL(ТекстОтвета)
 	Если ТекстОтвета = Неопределено Тогда
 		Возврат -100;
@@ -4170,9 +4170,9 @@
 		Возврат 0;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 28-03-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 28-03-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 9:30 start										
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 9:30 start										
 Функция ЭтоОшибкаЗапросаMySQL(ТекстОтвета)
 	Если ТекстОтвета = Неопределено Тогда
 		Возврат -100;
@@ -4188,9 +4188,9 @@
 		Возврат 0;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-04-2025 9:30 end																				  
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-04-2025 9:30 end																				  
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 start																					   
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 start																					   
 Функция Транслит(Строка) 
     
    Рез = СокрЛП(Строка);   
@@ -4277,9 +4277,9 @@
    Возврат(Рез);
   
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 27-10-2023 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 27-10-2023 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-08-2023 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-08-2023 19:30 start
 Функция СохранитьПараметрыОбработки(ПараметрыОбработки, Настройки) Экспорт
 	
 	Если Не ПравоДоступа("СохранениеДанныхПользователя", Метаданные) Тогда
@@ -4290,9 +4290,9 @@
 	УстановитьПривилегированныйРежим(Ложь);
 	// ХранилищеОбщихНастроек.Cохранить(ПараметрыОбработки.КлючОбъекта,  ПараметрыОбработки.КлючНастроек, Настройки, , ПараметрыОбработки.ИмяПользователя);
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-08-2023 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-08-2023 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-08-2023 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-08-2023 19:30 start
 Функция ПараметрыОбработки(_ИмяПользователя = Неопределено) Экспорт
 	Результат = Новый Структура();
 	Результат.Вставить("КлючОбъекта", ЭтотОбъект.Метаданные().Имя);
@@ -4312,9 +4312,9 @@
 	
 	Возврат Результат;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-08-2023 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-08-2023 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-08-2023 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-08-2023 19:30 start
 Функция ПолучитьСохраненныеДанные(_ИмяПользователя = Неопределено) Экспорт
 	ПараметрыОбработки = ПараметрыОбработки(_ИмяПользователя);
 	УстановитьПривилегированныйРежим(Истина);
@@ -4325,16 +4325,16 @@
 	КонецЕсли;
 	Возврат РезультатНастроек;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-08-2023 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-08-2023 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-08-2023 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-08-2023 19:30 start
 Процедура ВыполнитьЧтениеСохраненныхДанных(Форма, ЭтоОбычнаяФорма = Ложь) Экспорт
 	РезультатНастроек = ПолучитьСохраненныеДанные("Фоновый");	
 	ВыполнитьЗаполнениеОбъекта(Форма, РезультатНастроек, ЭтоОбычнаяФорма);	
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-08-2023 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-08-2023 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 18-07-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 18-07-2025 19:30 start
 Процедура ВыполнитьЗаполнениеОбъекта(Форма, РезультатНастроек, ЭтоОбычнаяФорма)
 	Если РезультатНастроек = Неопределено Тогда
 		Возврат;
@@ -4364,9 +4364,9 @@
 		КонецЕсли;
 	КонецЦикла;
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 18-07-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 18-07-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-07-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-07-2025 19:30 start
 Функция ЕстьСвойствоОбъекта(Объект, ИмяСвойства) Экспорт
     ЕстьСвоство = Ложь;
     
@@ -4389,7 +4389,7 @@
     Возврат ЕстьСвоство;
 КонецФункции
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 08-07-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 08-07-2025 19:30 start
 Функция ПолучитьНастройкиОбработки(НачальныеПараметры = Неопределено) Экспорт
 	
 	Если НачальныеПараметры = Неопределено Тогда
@@ -4415,7 +4415,7 @@
 	Возврат Результат;
 	
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 17-08-2023 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 17-08-2023 19:30 end
 
 Функция ПараметрыВыполненияВФоне(Знач ИдентификаторФормы = Неопределено) Экспорт
 	
@@ -4505,7 +4505,7 @@
 	
 КонецФункции
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 24-03-2024 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 24-03-2024 19:30 start
 Процедура ОтправитьЖурналРегистрацииВClickHouse(Параметры) Экспорт
 	УИД = Новый УникальныйИдентификатор;                                                      
 	АдресВХ = ПоместитьВоВременноеХранилище(Неопределено, УИД);
@@ -4592,9 +4592,9 @@
 	//ОчиститьЖурналРегистрации(ПараметрыОтчета);	
 		
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 24-03-2024 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 24-03-2024 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 25-03-2024 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 25-03-2024 19:30 start
 Процедура ВыполнитьЗадание() Экспорт
 	ПараметрыСохраненные = ПолучитьСохраненныеДанные("Фоновый").Объект;
 	Если ПараметрыСохраненные.КомандыФоновые.Количество() <= 0 Тогда
@@ -4606,9 +4606,9 @@
 		КонецЦикла;
 	КонецЕсли;
 КонецПроцедуры
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 25-03-2024 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 25-03-2024 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-09-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-09-2025 19:30 start
 Функция ПолучитьМассивПериодичности() Экспорт
 	Результат = Новый Массив;
 	//РезультатМассив.Добавить("Секунда");	
@@ -4618,9 +4618,9 @@
 	Результат.Добавить("Месяц");;
 	Возврат Результат;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 10-09-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 10-09-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 start
 Функция ПолучитьМассивТиповПриемника() Экспорт
 	Результат = Новый Массив;
 	Результат.Добавить("ClickHouseDB");
@@ -4631,9 +4631,9 @@
 	Результат.Добавить("Google Sheets");
 	Возврат Результат;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 end
 	
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 start
 Функция ПолучитьМассивФорматовДанныхПоТипу(ТипПриемника = "") Экспорт
 	Если ТипПриемника = "ClickHouseDB" Тогда
 		Возврат ПолучитьМассивФорматовДанныхПоТипуClickHouseDB();
@@ -4651,35 +4651,35 @@
 		Возврат ПолучитьМассивФорматовДанныхПоТипуSQL();
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 start
 Функция ПолучитьМассивФорматовДанныхПоТипуSQL()
 	Результат = Новый Массив;
 	Результат.Добавить("SQL");
 	Возврат Результат;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 start
 Функция ПолучитьМассивФорматовДанныхПоТипуClickHouseDB()
 	Возврат ПолучитьМассивФорматовДанныхПоТипуSQL();
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 start
 Функция ПолучитьМассивФорматовДанныхПоТипуMySQL()
 	Возврат ПолучитьМассивФорматовДанныхПоТипуSQL();
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 start
 Функция ПолучитьМассивФорматовДанныхПоТипуPostgreSQL()
 	Возврат ПолучитьМассивФорматовДанныхПоТипуSQL();
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 start
 Функция ПолучитьМассивФорматовДанныхПоТипуREST()
 	Результат = Новый Массив;
 	//Результат.Добавить("SQL");
@@ -4692,9 +4692,9 @@
 	Результат.Добавить("MySQL");
 	Возврат Результат;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 05-08-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 05-08-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 19:30 start
 Функция ПолучитьМассивФорматовДанныхПоТипуLocal()
 	Результат = Новый Массив;
 	Результат.Добавить("CSV");
@@ -4705,17 +4705,17 @@
 	Результат.Добавить("XLSX");
 	Возврат Результат;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 19:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 19:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 19:30 start
 Функция ПолучитьМассивФорматовДанныхПоТипуGoogleSheets()
 	Результат = Новый Массив;
 	Результат.Добавить("JSON");
 	Возврат Результат;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 26-08-2025 19:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 26-08-2025 19:30 end
 	
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 18-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 18-08-2025 9:30 start
 Функция ВернутьПроверкуИндексаЦикла(_Индекс, _Количество)
 	Если _Индекс > _Количество Тогда
 		Возврат Истина;
@@ -4723,25 +4723,25 @@
 		Возврат Ложь;
 	КонецЕсли;
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 18-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 18-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 18-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 18-08-2025 9:30 start
 Функция ВернутьСлучайноеЧисло(_ЧислоМин, _ЧислоМакс)
 	Генератор = Новый ГенераторСлучайныхЧисел();
 	Возврат Генератор.СлучайноеЧисло(_ЧислоМин, _ЧислоМакс);
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 18-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 18-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 18-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 18-08-2025 9:30 start
 Функция ПолучитьКоличествоЦикловЗапрос()
 	_Переменная = 1+1+1+3+2+2+2+5+6+1;
 	Возврат ВернутьСлучайноеЧисло(_Переменная - 1 - 1, _Переменная);
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 18-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 18-08-2025 9:30 end
 
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 18-08-2025 9:30 start
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 18-08-2025 9:30 start
 Функция ПолучитьКоличествоЦикловДней() 
 	_Переменная = 1 + 1 + 1 + 2;
 	Возврат ВернутьСлучайноеЧисло(_Переменная - 1, _Переменная);
 КонецФункции
-//<<%%>> ilya@kimkarus.ru @kimkarus_service_bot kimkarus.ru # Ilya Kosarev 18-08-2025 9:30 end
+//<<%%>> ilya@extractor1c.ru @extractor1c_support_bot extractor1c.ru # Ilya Kosarev 18-08-2025 9:30 end
