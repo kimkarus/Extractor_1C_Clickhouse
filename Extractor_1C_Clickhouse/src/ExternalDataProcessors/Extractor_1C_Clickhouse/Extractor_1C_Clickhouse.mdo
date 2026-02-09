@@ -613,6 +613,30 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <attributes uuid="8c8394b5-0438-4462-a0cc-5fa313902408">
+    <name>ВключитьАвтозапускЗапросовПриОткрытии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включить автозапуск запросов при открытии</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="25c2c30f-46e8-49da-9c88-d5e964af285f">
+    <name>ВключитьАвтосохранениеПриЗакрытии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включить автосохранение при закрытии</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
   <tabularSections uuid="14a3a85e-bfb6-4f83-9dca-9fbe48880a0e">
     <producedTypes>
       <objectType typeId="20caaa12-291a-43d2-86da-d0c45b14c0de" valueTypeId="216051ab-d1a1-4b3e-a623-bf25cd0de75b"/>
